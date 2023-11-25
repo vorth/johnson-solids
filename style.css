@@ -1,0 +1,194 @@
+
+:root {
+  --color-todo: rgb(255, 242, 242);
+
+  --color-ident: rgb(175, 200, 220); /* same as vZome default background */
+  --color-ident-selected: rgb(87, 100, 110); /* each RGB channel is 1/2 of unselected value */
+  
+  --color-text: rgb(127, 127, 127);
+  --color-text-selected: rgb(240, 240, 240);
+
+  --color-blu-strut: rgb(0, 118, 189);
+  --color-yel-strut: rgb(240, 160, 0);
+  --color-red-strut: rgb(175, 0, 0);
+  --color-grn-strut: rgb(0, 141, 54);
+
+  --color-blu-panel: rgb(128, 186, 202);
+  --color-yel-panel: rgb(248, 208, 128);
+  --color-red-panel: rgb(215, 128, 128);
+  --color-grn-panel: rgb(127, 198, 154);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0; /* This is essential to avoid a small white border around the whole main div. */
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax( 0, 3fr ) minmax( 0, 5fr );
+  grid-template-rows: min-content minmax( 0, 1fr );
+  grid-template-areas:
+    "intro intro"
+    "table viewer";
+  gap: 7px;
+  height: 100vh;
+}
+
+.intro {
+  grid-area: intro;
+  max-width: 800px;
+  margin: auto;
+}
+
+.viewer {
+  position: relative;
+  grid-area: viewer;
+  width: 100%;
+}
+
+#viewer {
+  width: 99%;
+  height: 99%;
+}
+
+.viewer h1 {
+  cursor: default; /* disable the "I-beam" text cursor */
+  position: absolute;
+  z-index: 300;
+  top: 1rem;
+  left: 3rem;
+}
+
+.viewer input {
+  cursor: default; /* disable the "I-beam" text cursor */
+  position: absolute;
+  z-index: 300;
+  top: 1rem;
+  right: 3rem;
+}
+
+.table {
+  grid-area: table; /* added for the grid above */
+  overflow: auto;
+}
+/*
+  This CSS originally copied largely as-is from:
+
+      https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables
+*/
+
+/* spacing */
+
+table {
+  border-collapse: collapse;
+  cursor: default; /* disable the "I-beam" text cursor */
+  table-layout: fixed;
+  width: 100%;
+}
+
+thead th:nth-child(1)   /* id column */
+{
+  width: 6%;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 3px;
+  white-space: nowrap;
+}
+
+th.ident, td.done {
+  background-color: var(--color-ident);
+  font-weight: bold;
+}
+
+td.todo {
+  background-color: var(--color-todo);
+  font-style: italic;
+}
+
+td.golden {
+  background-color: var(--color-red-panel);
+}
+tr.selected > td:last-child.golden {
+  background-color: var(--color-red-strut);
+}
+
+td.root2 {
+  background-color: var(--color-grn-panel);
+}
+tr.selected > td:last-child.root2 {
+  background-color: var(--color-grn-strut);
+}
+
+td.root3 {
+  background-color: var(--color-yel-panel);
+}
+tr.selected > td:last-child.root3 {
+  background-color: var(--color-yel-strut);
+}
+
+th, td
+{
+  background-color: whitesmoke;
+}
+
+/* selected table row */
+
+tr.selected,
+tr.selected td {
+  border: 1px solid black;
+  color: var(--color-text-selected);
+  font-weight: bold;
+}
+
+tr.selected td.done {
+  background-color: var(--color-ident-selected)
+}
+
+/* typography */
+
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+thead td {
+  text-align: center;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+/* graphics and colors */
+
+thead,
+tfoot {
+  /* position:fixed; */
+  background: whitesmoke;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2)
+  );
+}
