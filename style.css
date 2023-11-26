@@ -61,14 +61,6 @@ html, body {
   left: 3rem;
 }
 
-.viewer input {
-  cursor: default; /* disable the "I-beam" text cursor */
-  position: absolute;
-  z-index: 300;
-  top: 1rem;
-  right: 3rem;
-}
-
 .table {
   grid-area: table; /* added for the grid above */
   overflow: auto;
