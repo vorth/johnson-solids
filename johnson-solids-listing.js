@@ -5,42 +5,40 @@ let selectedRow;
 const table = document.getElementById( "partsTable" );
 const tbody = table.createTBody();
 for (const jsolid of models) {
-  const id = jsolid.id;
-  const tr = tbody.insertRow();
-  fillRow(tr, jsolid);
-  tr.addEventListener("click",
-    () => { 
-        if(jsolid.url) {
-          switchModel(jsolid);
-          if ( selectedRow ) {
-            selectedRow.className = "";
-          }
-          selectedRow = tr;
-          selectedRow.className = "selected";
-          const index = document.getElementById( "index" );
-          // TODO: Don't overwrite scene checkbox here. Use an inner div. 
-          index.textContent = "J" +id;
-      } else {
-        alert("Johnson solid J" + id + " is not yet available.\n\nPlease help us collect the full set.");
-      }
-    }
-  );
-}
-document.getElementById( "showEdges" ),addEventListener("click",
-  () => {
-    // TODO: setScene("data-field" of the selected tr (which will initially be null or undefined));
+  // include a "ready" query param in the URL to show only the jsolids that have a URL defined 
+  if(jsolid.url || (new URL(document.location)).searchParams.get("ready") == null) {
+    const tr = tbody.insertRow();
+    fillRow(tr, jsolid);
+    tr.addEventListener("click", () => selectJohnsonSolid( jsolid, tr ) );
   }
-)
+}
+selectJohnsonSolid( models[ 0 ], tbody .rows[ 0 ] );
+document.getElementById( "showEdges" ).addEventListener("change", () => // use "change" here, not "click"
+  {
+    console.log("checkbox changed");
+    setScene(selectedRow.dataset.field);
+  } );
+
+function selectJohnsonSolid( jsolid, tr ) {
+  const { url, id } = jsolid;
+    if(url) {
+      if ( selectedRow ) {
+        selectedRow.className = "";
+      }
+      selectedRow = tr;
+      selectedRow.className = "selected";
+      document.getElementById( "index" ).textContent = "J" +id;
+      switchModel(jsolid);
+  } else {
+      alert("Johnson solid J" + id + " is not yet available.\n\nPlease help us collect the full set.");
+  }
+}
 
 function fillRow(tr, jsolid) {
-  const id = jsolid.id;
-  const title = jsolid.title;
-  const field = jsolid.field;
-  const url = jsolid.url;
+  const { id, title, field, url } = jsolid;
   if(!tr.id) {
     tr.id = "jsolid-" + id;
   }
-  tr.setAttribute("data-id", id);
   tr.setAttribute("data-field", field);
   // Id column
   let td = tr.insertCell();
@@ -58,16 +56,21 @@ function fillRow(tr, jsolid) {
 }
 
 function switchModel( jsolid ) {
-  const viewer = document.getElementById( "viewer" );
-  viewer.src = jsolid.url;
+  document.getElementById( "viewer" ).src = jsolid.url;
   setScene( jsolid.field );
 }
 
 function setScene( field ) {
-  let sceneName = "";
-  if(field == "Golden") {
-    sceneName = document.getElementById( "showEdges" ).checked ? "Edges" : "Faces";
-  }
-  const viewer = document.getElementById( "viewer" );
-  viewer.scene = sceneName;
+  const scene = sceneFor(field);
+  document.getElementById( "viewer" ).scene = scene;          
+  console.log("setScene( '" + field + "' ) = '" + scene + "'");
 }
+
+function sceneFor( field ) {
+  return field == "Golden"
+    ? document.getElementById( "showEdges" ).checked 
+      ? "Edges"
+      : "Faces"
+    : "";
+}
+
