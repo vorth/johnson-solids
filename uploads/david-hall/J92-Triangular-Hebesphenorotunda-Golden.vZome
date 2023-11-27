@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="34" field="golden" version="7.1">
-  <EditHistory editNumber="64" lastStickyEdit="60">
+  <EditHistory editNumber="70" lastStickyEdit="70">
     <StrutCreation anchor="0 0 0 0 0 0" index="0" len="4 6"/>
     <SelectManifestation point="4 6 0 0 0 0"/>
     <ApplyTool copyColors="true" name="icosahedral.builtin/icosahedral around origin" selectInputs="true"/>
@@ -82,15 +82,25 @@
     <ConvexHull3d mode="noPanels"/>
     <BookmarkTool name="tool-2"/>
     <InvertSelection/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="1"/>
     <SelectAll originLast="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
     <DeselectAll/>
+    <Snapshot id="2"/>
+    <SelectAll originLast="true"/>
+    <Hide/>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="3"/>
   </EditHistory>
   <notes>
-    <page snapshot="0" title="Faces">
+    <page snapshot="2" title="Faces">
       <ViewModel distance="98.38412475585938" far="196.76824951171875" near="0.24596033990383148" parallel="false" stereoAngle="0.0" width="44.27286148071289">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="-0.80901700258255" y="0.30901700258255005" z="0.5"/>
@@ -98,7 +108,7 @@
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="1" title="Edges">
+    <page snapshot="3" title="Edges">
       <ViewModel distance="98.38412475585938" far="196.76824951171875" near="0.24596033990383148" parallel="false" stereoAngle="0.0" width="44.27286148071289">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="-0.80901700258255" y="0.30901700258255005" z="0.5"/>
@@ -119,7 +129,7 @@
       <LookDirection x="-0.525731086730957" y="0.0" z="-0.8506507873535156"/>
     </ViewModel>
   </Viewing>
-  <SymmetrySystem name="icosahedral" renderingStyle="printable">
+  <SymmetrySystem name="icosahedral" renderingStyle="lifelike">
     <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
     <Direction color="0,141,54" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
     <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
