@@ -84,7 +84,7 @@ export const models = [
   { id:83, field:"", title:"Tridiminished rhombicosidodecahedron"},
   { id:84, field:"", title:"Snub disphenoid"},
   { id:85, field:"", title:"Snub square antiprism"},
-  { id:86, field:"", title:"Sphenocorona"},
+  { id:86, field:"Golden", title:"Sphenocorona", url:"uploads/david-hall/J86-Rational-Approximation-Golden.vZome"},
   { id:87, field:"", title:"Augmented sphenocorona"},
   { id:88, field:"", title:"Sphenomegacorona"},
   { id:89, field:"", title:"Hebesphenomegacorona"},
