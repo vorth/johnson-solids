@@ -1,7 +1,7 @@
 export const models = [
   { id:1 , field:"Golden", title:"Square pyramid", url:"uploads/david-hall/J1-Square-Pyramid-Golden.vZome"},
   { id:2 , field:"Golden", title:"Pentagonal pyramid", url:"uploads/Jackpike/J2-Pentagonal-Pyramid-Golden.vzome"},
-  { id:3 , field:"", title:"Triangular cupola"},
+  { id:3 , field:"Golden", title:"Triangular cupola", url:"uploads/Jackpike/J3-Triangular-cupola-Golden.vzome"},
   { id:4 , field:"", title:"Square cupola"},
   { id:5 , field:"", title:"Pentagonal cupola"},
   { id:6 , field:"", title:"Pentagonal rotunda"},
