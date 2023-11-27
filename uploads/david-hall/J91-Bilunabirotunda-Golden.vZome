@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="34" field="golden" version="7.1">
-  <EditHistory editNumber="94" lastStickyEdit="94">
+  <EditHistory editNumber="82" lastStickyEdit="82">
     <StrutCreation anchor="0 0 0 0 0 0" dir="red" index="1" len="1 2"/>
     <SelectManifestation point="0 0 2 3 1 2"/>
     <ApplyTool copyColors="true" name="icosahedral.builtin/icosahedral around origin" selectInputs="true"/>
@@ -111,30 +111,18 @@
       <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
     </Hide>
     <Snapshot id="1"/>
-    <SelectAll originLast="true"/>
-    <BookmarkTool name="tool-2"/>
-    <ConvexHull3d mode="noPanels"/>
-    <BookmarkTool name="tool-3"/>
-    <InvertSelection/>
-    <Hide/>
-    <Snapshot id="2"/>
-    <SelectAll originLast="true"/>
-    <Hide/>
-    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
-    <DeselectAll/>
-    <Snapshot id="3"/>
   </EditHistory>
   <notes>
-    <page snapshot="2" title="Edges">
-      <ViewModel distance="82.17733001708984" far="164.3546600341797" near="0.20544332265853882" parallel="false" stereoAngle="0.0" width="36.979793548583984">
+    <page snapshot="0" title="Edges">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="-0.5720614194869995" y="-0.21850800514221191" z="-0.7905694246292114"/>
         <LookDirection x="0.1350453943014145" y="0.9256148338317871" z="-0.3535534143447876"/>
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="3" title="Faces">
-      <ViewModel distance="82.17733001708984" far="164.3546600341797" near="0.20544332265853882" parallel="false" stereoAngle="0.0" width="36.979793548583984">
+    <page snapshot="1" title="Faces">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="-0.5720614194869995" y="-0.21850800514221191" z="-0.7905694246292114"/>
         <LookDirection x="0.1350453943014145" y="0.9256148338317871" z="-0.3535534143447876"/>
@@ -154,7 +142,7 @@
       <LookDirection x="0.1350453943014145" y="0.9256148338317871" z="-0.3535534143447876"/>
     </ViewModel>
   </Viewing>
-  <SymmetrySystem name="icosahedral" renderingStyle="lifelike">
+  <SymmetrySystem name="icosahedral" renderingStyle="solid connectors">
     <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
     <Direction color="0,141,54" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
     <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
@@ -194,7 +182,5 @@
   <Tools>
     <Tool copyColors="true" deleteInputs="true" id="tool-0" label="translation 0" selectInputs="false"/>
     <Tool copyColors="true" deleteInputs="true" id="tool-1" label="translation 1" selectInputs="false"/>
-    <Tool copyColors="true" deleteInputs="false" id="tool-2" label="Faces" selectInputs="true"/>
-    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="Edges" selectInputs="true"/>
   </Tools>
 </vzome:vZome>
