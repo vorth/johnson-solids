@@ -53,17 +53,37 @@ html, body {
   height: 99%;
 }
 
-.viewer h1 {
+.label {
   cursor: default; /* disable the "I-beam" text cursor */
   position: absolute;
   z-index: 300;
-  top: 1rem;
-  left: 3rem;
+  top: 0.3rem;
+  left: 2rem;
 }
 
 .table {
   grid-area: table; /* added for the grid above */
   overflow: auto;
+}
+
+#zome-switch {
+  cursor: default; /* disable the "I-beam" text cursor */
+  position: absolute;
+  z-index: 300;
+  top: 2rem;
+  right: 3rem;
+}
+
+#showEdges {
+  margin-right: 0.5rem;
+}
+
+.no-zome {
+  display: none;
+}
+
+.zome {
+  display: flex;
 }
 /*
   This CSS originally copied largely as-is from:
@@ -155,12 +175,8 @@ td {
   letter-spacing: 1px;
 }
 
-thead td {
-  text-align: center;
-}
-
-tbody td {
-  text-align: center;
+thead, tbody {
+  text-align: left;
 }
 
 tfoot th {

@@ -62,7 +62,11 @@ function switchModel( jsolid ) {
 
 function setScene( field ) {
   const scene = sceneFor(field);
-  document.getElementById( "viewer" ).scene = scene;          
+  document.getElementById( "viewer" ).scene = scene;
+  if ( !!scene )
+    document.getElementById( "zome-switch" ).className = 'zome';
+  else
+    document.getElementById( "zome-switch" ).className = 'no-zome';
   console.log("setScene( '" + field + "' ) = '" + scene + "'");
 }
 
