@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="34" field="golden" version="7.1">
-  <EditHistory editNumber="70" lastStickyEdit="70">
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="35" field="golden" version="7.1">
+  <EditHistory editNumber="74" lastStickyEdit="70">
     <StrutCreation anchor="0 0 0 0 0 0" index="0" len="4 6"/>
     <SelectManifestation point="4 6 0 0 0 0"/>
     <ApplyTool copyColors="true" name="icosahedral.builtin/icosahedral around origin" selectInputs="true"/>
@@ -94,10 +94,16 @@
     <DeselectAll/>
     <Snapshot id="2"/>
     <SelectAll originLast="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
     <DeselectAll/>
     <Snapshot id="3"/>
+    <SelectAll originLast="true"/>
+    <Hide/>
+    <ApplyTool copyColors="true" name="tool-1" selectInputs="true"/>
+    <DeselectAll/>
   </EditHistory>
   <notes>
     <page snapshot="2" title="Faces">
