@@ -1,4 +1,4 @@
-import { models } from './johnson-solids-challenge-models.js';
+import { models } from './johnson-solids-models.js';
 
 let selectedRow;
 
