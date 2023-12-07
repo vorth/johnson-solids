@@ -5,7 +5,7 @@ export const models = [
   { id:4 , field:"", edgeScene:"", faceScene:"", title:"Square cupola"},
   { id:5 , field:"", edgeScene:"", faceScene:"", title:"Pentagonal cupola"},
   { id:6 , field:"", edgeScene:"", faceScene:"", title:"Pentagonal rotunda"},
-  { id:7 , field:"", edgeScene:"", faceScene:"", title:"Elongated triangular pyramid"},
+  { id:7 , field:"Polygon12", edgeScene:"", faceScene:"", title:"Elongated triangular pyramid", url:"uploads/david-hall/J7-Elongated-triangular-pyramid-Polygon12.vZome"},
   { id:8 , field:"Root2", edgeScene:"", faceScene:"", title:"Elongated square pyramid", url:"uploads/david-hall/J8-Elongated-Square-Pyramid-Root2.vZome"},
   { id:9 , field:"", edgeScene:"", faceScene:"", title:"Elongated pentagonal pyramid"},
   { id:10, field:"", edgeScene:"", faceScene:"", title:"Gyroelongated square pyramid"},
