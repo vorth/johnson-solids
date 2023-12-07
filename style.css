@@ -7,6 +7,7 @@
   
   --color-text: rgb(127, 127, 127);
   --color-text-selected: rgb(240, 240, 240);
+  --color-text-selected-dark: rgb(15, 15, 15);
 
   --color-blu-strut: rgb(0, 118, 189);
   --color-yel-strut: rgb(240, 160, 0);
@@ -17,6 +18,8 @@
   --color-yel-panel: rgb(248, 208, 128);
   --color-red-panel: rgb(215, 128, 128);
   --color-grn-panel: rgb(127, 198, 154);
+
+  --checbox-scale: 1.75;
 }
 
 html, body {
@@ -53,18 +56,51 @@ html, body {
   height: 99%;
 }
 
-.viewer h1 {
+.label {
   cursor: default; /* disable the "I-beam" text cursor */
   position: absolute;
   z-index: 300;
-  top: 1rem;
-  left: 3rem;
+  top: 0.3rem;
+  left: 2rem;
 }
 
 .table {
   grid-area: table; /* added for the grid above */
   overflow: auto;
 }
+
+#zome-switch {
+  cursor: default; /* disable the "I-beam" text cursor */
+  position: absolute;
+  z-index: 300;
+  top: 2rem;
+  right: 3rem;
+}
+
+input[type=checkbox]
+{
+  /* Resized Checkboxes */
+  /* See other approaches at https://stackoverflow.com/questions/306924/can-i-change-the-checkbox-size-using-css */
+  -ms-transform: scale(var(--checbox-scale)); /* IE */
+  -moz-transform: scale(var(--checbox-scale)); /* FF */
+  -webkit-transform: scale(var(--checbox-scale)); /* Safari and Chrome */
+  -o-transform: scale(var(--checbox-scale)); /* Opera */
+  transform: scale(var(--checbox-scale));
+  padding: 2px;
+}
+
+#showEdges {
+  margin-right: 0.5rem;
+}
+
+.no-zome {
+  display: none;
+}
+
+.zome {
+  display: flex;
+}
+
 /*
   This CSS originally copied largely as-is from:
 
@@ -82,8 +118,14 @@ table {
 
 thead th:nth-child(1)   /* id column */
 {
+  text-align: center;
   width: 6%;
 }
+tbody td:nth-child(1)   /* id column */
+{
+  text-align: right;
+}
+
 
 th,
 td {
@@ -103,10 +145,10 @@ td.todo {
 }
 
 td.golden {
-  background-color: var(--color-red-panel);
+  background-color: var(--color-blu-panel);
 }
 tr.selected > td:last-child.golden {
-  background-color: var(--color-red-strut);
+  background-color: var(--color-blu-strut);
 }
 
 td.root2 {
@@ -120,7 +162,19 @@ td.root3 {
   background-color: var(--color-yel-panel);
 }
 tr.selected > td:last-child.root3 {
+  color: var(--color-text-selected-dark); /* better contrast with yellow */
   background-color: var(--color-yel-strut);
+}
+
+td.polygon12, 
+td.polygon30, 
+td.polygon60 {
+  background-color: var(--color-red-panel);
+}
+tr.selected > td:last-child.polygon12,
+tr.selected > td:last-child.polygon30,
+tr.selected > td:last-child.polygon60 {
+  background-color: var(--color-red-strut);
 }
 
 th, td
@@ -155,12 +209,8 @@ td {
   letter-spacing: 1px;
 }
 
-thead td {
-  text-align: center;
-}
-
-tbody td {
-  text-align: center;
+thead, tbody {
+  text-align: left;
 }
 
 tfoot th {

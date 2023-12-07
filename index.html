@@ -67,11 +67,14 @@
     </div>
 
     <div class="viewer">
-      <h1>
-        <input type="checkbox" id="showEdges">
-        <label for="showEdges" id="index"></label>
+      <h1 class="label">
+          <div id="index"></div>
       </h1>
-      <vzome-viewer id="viewer" load-camera="once" />
+      <div id="zome-switch">
+        <input type="checkbox" id="showEdges">
+        <div>Show Zometool</div>
+      </div>
+      <vzome-viewer id="viewer" reactive="false"/>
     </div>
   </div>
   

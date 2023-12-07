@@ -1,9 +1,18 @@
-import { models } from './johnson-solids-challenge-models.js';
+import { models } from './johnson-solids-models.js';
 
 let selectedRow;
+let scenes;
 
 const table = document.getElementById( "partsTable" );
 const tbody = table.createTBody();
+const viewer = document.getElementById( "viewer" );
+const showEdges = document.getElementById( "showEdges" );
+
+viewer .addEventListener( "vzome-scenes-discovered", (e) => {
+  scenes = e.detail;
+  console.log( "scenes discovered in " + viewer.src + "\n" + JSON.stringify( scenes, null, 2 ) );
+} );
+
 for (const jsolid of models) {
   // include a "ready" query param in the URL to show only the jsolids that have a URL defined 
   if(jsolid.url || (new URL(document.location)).searchParams.get("ready") == null) {
@@ -13,10 +22,10 @@ for (const jsolid of models) {
   }
 }
 selectJohnsonSolid( models[ 0 ], tbody .rows[ 0 ] );
-document.getElementById( "showEdges" ).addEventListener("change", () => // use "change" here, not "click"
-  {
-    console.log("checkbox changed");
-    setScene(selectedRow.dataset.field);
+showEdges.addEventListener("change", // use "change" here, not "click"
+  () => {
+    const { field, edgeScene, faceScene, zometool } = selectedRow.dataset;
+    setScene(field, zometool);
   } );
 
 function selectJohnsonSolid( jsolid, tr ) {
@@ -35,15 +44,18 @@ function selectJohnsonSolid( jsolid, tr ) {
 }
 
 function fillRow(tr, jsolid) {
-  const { id, title, field, url } = jsolid;
+  const { id, title, field, url, edgeScene, faceScene, zometool } = jsolid;
+  tr.setAttribute("data-field", field);
+  tr.setAttribute("data-edgeScene", edgeScene);
+  tr.setAttribute("data-faceScene", faceScene);
+  tr.setAttribute("data-zometool", !!zometool);
   if(!tr.id) {
     tr.id = "jsolid-" + id;
   }
-  tr.setAttribute("data-field", field);
   // Id column
   let td = tr.insertCell();
   td.className = url ? "ident done" : "ident todo";
-  td.innerHTML = id;
+  td.innerHTML = "J" + id;
   // title column
   td = tr.insertCell();
   td.className = "title";
@@ -56,19 +68,25 @@ function fillRow(tr, jsolid) {
 }
 
 function switchModel( jsolid ) {
-  document.getElementById( "viewer" ).src = jsolid.url;
-  setScene( jsolid.field );
+  const { field, url, zometool } = jsolid;
+  viewer.src = url;
+  setScene( field, zometool );
 }
 
-function setScene( field ) {
-  const scene = sceneFor(field);
-  document.getElementById( "viewer" ).scene = scene;          
-  console.log("setScene( '" + field + "' ) = '" + scene + "'");
+function setScene( field, zometool ) {
+  const scene = sceneFor(field, zometool);
+  document.getElementById( "zome-switch" ).className = ( !!scene && !!zometool ) ? 'zome' : 'no-zome';
+  viewer.scene = scene;
+  viewer.update({ camera: false });
+  console.log("setScene( '" + field + "', '" + zometool + "' ) = '" + scene + "'");
 }
 
-function sceneFor( field ) {
-  return field == "Golden"
-    ? document.getElementById( "showEdges" ).checked 
+function sceneFor( field, zometool ) {
+  // TODO: update this to use edgeScene and faceScene from the json
+  // instead of relying on naming convention.
+  // That will also allow multiple solids to share the same vZome file.
+  return field == "Golden" && zometool == "true"
+    ? showEdges.checked 
       ? "Edges"
       : "Faces"
     : "";
