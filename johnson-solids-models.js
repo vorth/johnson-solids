@@ -25,7 +25,7 @@ export const models = [
   { id:24, field:"", edgeScene:"", faceScene:"", title:"Gyroelongated pentagonal cupola"},
   { id:25, field:"", edgeScene:"", faceScene:"", title:"Gyroelongated pentagonal rotunda"},
   { id:26, field:"", edgeScene:"", faceScene:"", title:"Gyrobifastigium"},
-  { id:27, field:"Root2", edgeScene:"Edges", faceScene:"Faces", title:"Triangular orthobicupola", url:"uploads/john-kostick/J27-Triangular-Orthobicvupola-Root2.vZome"},
+  { id:27, field:"Root2", edgeScene:"Edges", faceScene:"Faces", title:"Triangular orthobicupola", url:"uploads/john-kostick/J27-Triangular-Orthobicupola-Root2.vZome"},
   { id:28, field:"", edgeScene:"", faceScene:"", title:"Square orthobicupola"},
   { id:29, field:"", edgeScene:"", faceScene:"", title:"Square gyrobicupola"},
   { id:30, field:"", edgeScene:"", faceScene:"", title:"Pentagonal orthobicupola"},
@@ -90,5 +90,5 @@ export const models = [
   { id:89, field:"", edgeScene:"", faceScene:"", title:"Hebesphenomegacorona"},
   { id:90, field:"", edgeScene:"", faceScene:"", title:"Disphenocingulum"},
   { id:91, field:"Golden", edgeScene:"Edges", faceScene:"Faces", zometool:"true", title:"Bilunabirotunda", url:"uploads/david-hall/J91-Bilunabirotunda-Golden.vZome"},
-  { id:92, field:"Golden", edgeScene:"Edged", faceScene:"Faces", zometool:"true", title:"Triangular hebesphenorotunda", url:"uploads/david-hall/J92-Triangular-Hebesphenorotunda-Golden.vZome"},
+  { id:92, field:"Golden", edgeScene:"Edges", faceScene:"Faces", zometool:"true", title:"Triangular hebesphenorotunda", url:"uploads/david-hall/J92-Triangular-Hebesphenorotunda-Golden.vZome"},
 ]
