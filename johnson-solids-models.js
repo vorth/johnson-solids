@@ -26,7 +26,7 @@ export const models = [
   { id:25, field:"", edgeScene:"Edges", faceScene:"Faces", title:"Gyroelongated pentagonal rotunda"},
   { id:26, field:"", edgeScene:"Edges", faceScene:"Faces", title:"Gyrobifastigium"},
   { id:27, field:"Root2", edgeScene:"Edges", faceScene:"Faces", title:"Triangular orthobicupola", url:"uploads/john-kostick/J27-Triangular-Orthobicupola-Root2.vZome"},
-  { id:28, field:"", edgeScene:"Edges", faceScene:"Faces", title:"Square orthobicupola"},
+  { id:28, field:"", edgeScene:"", faceScene:"", title:"Square orthobicupola"}, url:"uploads/john-kostick/J28-Square-Orthobicupola-Root2.vZome"},
   { id:29, field:"", edgeScene:"Edges", faceScene:"Faces", title:"Square gyrobicupola"},
   { id:30, field:"", edgeScene:"Edges", faceScene:"Faces", title:"Pentagonal orthobicupola"},
   { id:31, field:"", edgeScene:"Edges", faceScene:"Faces", title:"Pentagonal gyrobicupola"},
