@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.5">
+	<title>Making Johnson Solids with vZome</title>
+	<meta name="description" content="A collection of the Johnson solids, using vZome technology"/>
+	<meta name="keywords" content="geometry,zome,vzome,Johnson solids"/>
+</head>
+<body>
+	<h1>
+		A collection of the <a href="./?ready=1">Johnson Solids</a> using <a href="https://vzome.com" target="_blank" rel="noopener">vZome</a> technology
+	</h1>    
+	<h2>
+		Guidelines for contributing vZome models
+	</h2> 
+	<p>
+		Contributers must have a github account and fork the johnson-solids <a href="https://github.com/vZome/johnson-solids/" target="_blank" rel="noopener">GitHub repo</a>.
+		TODO: Add github Pull Request guidelines???
+	</p>
+	<p>
+		As a general rule, all vZome files should:
+		<ul>
+			<li>Be stored in a folder named with the github username of the contributer, located under /uploads/.</li>
+			<li>Include the name(s) of the Johnson solid(s) in the file name. (e.g. J1 ... J92)</li>
+			<li>Include a corresponding .shapes.json file.</li>
+			<li>Use the simplest algebraic field in which the model can be generated.</li>
+			<li>Have an edge length equal to the default blue or green strut in the applicable field and symmetry system. (e.g. B1 or G1)</li>
+			<li>Retain the default vZome background color.</li>
+			<li>Either have the default scene contain only panels forming the Johnson solid 
+				or else capture a scene containing only panels forming the Johnson solid. Name the scene "Faces". *
+			</li>
+			<li>Have the centroid or significant symmetry features (points, lines or planes) located at the origin and consistently aligned with X, Y and Z axes.
+				An exception is when one solid is constructed by adjoining two others. In this case, a single file may be used to show all of them, 
+				and featuring that relationship by having just one of them centered around the origin. TODO: List examples here.
+			</li>
+			<li>Have appropriate values for the field, edgescene, facescene and url attributes in johnson-solids-models.js. (See existing examples)</li>
+		</ul>
+		<a href="https://www.zometool.com" target="_blank" rel="noopener">Zometool</a> constructible models should follow these additional guidelines:
+		<ul>
+			<li>Use the golden field</li>
+			<li>Use icosahedral symmetry with lifelike shapes for the default scene.</li>
+			<li>Capture a scene containing only balls and struts forming the edges of the Johnson solid. Name the scene "Edges". * 
+				This criteria is optional for non-zometool constructible models, but still recommended.</li>
+			<li>Retain the default strut and panel colors.</li>
+			<li>Have a zometool:"true" attribute on the appropriate line in johnson-solids-models.js.</li>
+		</ul>
+		* Note, field names, file names and scene names are all case sensitive in johnson-solids-models.js.
+	</p>
+	<p>
+		A single vZome file may contain multiple scenes, each showing different Johnson solid (panels-only). 
+		In this case, each scene must have a unique name, typically including the name of the solid. (e.g. J38 Faces)
+		If the model uses the golden field, each panels-only scene should have a corresponding edges-only scene for each solid.
+		See J38 and J39 as an example.
+		In any case, each scene must have a unique name. No scene should be named "default scene" since that is reserved for the main model.
+	</p>
+	<p>
+		Some of these criteria are necessary for proper operation of the site. Others are just conventions and preferences 
+		based on our discussions on Discord. 
+		Feel free to post suggestions and questions regarding this site on <a href="https://discord.com/channels/808488427400986724/1176604061294936114" 
+			target="_blank" rel="noopener">Discord</a>.
+	</p>
+	<h2>
+		References
+	</h2> 
+	<p>
+		Join us on <a href="https://discord.com/channels/808488427400986724/1176604061294936114" 
+			target="_blank" rel="noopener">Discord</a>
+		and <a href="https://github.com/vZome/johnson-solids/" target="_blank" rel="noopener">GitHub</a>.
+		More details are on <a href="https://en.wikipedia.org/wiki/List_of_Johnson_solids" target="_blank" rel="noopener">Wikipedia</a>.
+	</p>  
+</body>
+</html>
