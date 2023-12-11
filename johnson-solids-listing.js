@@ -80,7 +80,7 @@ function setScene( jsolidSceneData ) {
   // Either one should have these properties, all in lower case
   const { field, edgescene, facescene, zometool } = jsolidSceneData;
   const scene = field == "Golden" && zometool == "true" && showEdges.checked ? edgescene : facescene;
-  zomeSwitch.className = ( !!zometool ) ? 'zome' : 'no-zome';
+  zomeSwitch.className = ( zometool == "true" ) ? 'zome' : 'no-zome';
   viewer.scene = scene;
   console.log("Setting scene to '" + scene + "'");
   viewer.update({ camera: false });
