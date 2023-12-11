@@ -1,10 +1,9 @@
-export const models = [
-  { id:1 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Square pyramid", url:"uploads/david-hall/J1-Square-Pyramid-Golden.vZome"},
+export const models = [ { id:1 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Square pyramid", url:"uploads/david-hall/J1-Square-Pyramid-Golden.vZome"},
   { id:2 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Pentagonal pyramid", url:"uploads/Jackpike/J2-Pentagonal-Pyramid-Golden.vZome"},
   { id:3 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Triangular cupola", url:"uploads/Jackpike/J3-Triangular-cupola-Golden.vZome"},
   { id:4 , field:"", edgescene:"Edges", facescene:"Faces", title:"Square cupola"},
-  { id:5 , field:"", edgescene:"Edges", facescene:"Faces", title:"Pentagonal cupola"},
-  { id:6 , field:"", edgescene:"Edges", facescene:"Faces", title:"Pentagonal rotunda"},
+  { id:5 , field:"Golden", edgescene:"Edges", facescene:"Faces", title:"Pentagonal cupola", url:"uploads/Jackpike/J5-Pentagonal-cupola-Golden.vZome" },
+  { id:6 , field:"Golden", edgescene:"Edges", facescene:"Faces", title:"Pentagonal rotunda", url:"uploads/Jackpike/J6-Pentagonal-rotunda-Golden.vZome" },
   { id:7 , field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Elongated triangular pyramid", url:"uploads/david-hall/J7-Elongated-triangular-pyramid-Polygon12.vZome"},
   { id:8 , field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Elongated square pyramid", url:"uploads/david-hall/J8-Elongated-Square-Pyramid-Root2.vZome"},
   { id:9 , field:"", edgescene:"Edges", facescene:"Faces", title:"Elongated pentagonal pyramid"},
