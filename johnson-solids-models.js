@@ -83,7 +83,7 @@ export const models = [ { id:1 , field:"Golden", edgescene:"Edges", facescene:"F
   { id:83, field:"", edgescene:"Edges", facescene:"Faces", title:"Tridiminished rhombicosidodecahedron"},
   { id:84, field:"", edgescene:"Edges", facescene:"Faces", title:"Snub disphenoid"},
   { id:85, field:"", edgescene:"Edges", facescene:"Faces", title:"Snub square antiprism"},
-  { id:86, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Sphenocorona", url:"uploads/david-hall/J86-Rational-Approximation-Golden.vZome"},
+  { id:86, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Sphenocorona", url:"https://raw.githubusercontent.com/vorth/vzome-sharing/main/2023/12/12/08-01-05-J86-Rational-Approximation-Golden/J86-Rational-Approximation-Golden.vZome"},
   { id:87, field:"", edgescene:"Edges", facescene:"Faces", title:"Augmented sphenocorona"},
   { id:88, field:"", edgescene:"Edges", facescene:"Faces", title:"Sphenomegacorona"},
   { id:89, field:"", edgescene:"Edges", facescene:"Faces", title:"Hebesphenomegacorona"},
