@@ -2,7 +2,7 @@ export const models = [ { id:1 , field:"Golden", edgescene:"Edges", facescene:"F
   { id:2 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Pentagonal pyramid", url:"uploads/Jackpike/J2-Pentagonal-Pyramid-Golden.vZome"},
   { id:3 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Triangular cupola", url:"uploads/Jackpike/J3-Triangular-cupola-Golden.vZome"},
   { id:4 , field:"", edgescene:"Edges", facescene:"Faces", title:"Square cupola"},
-  { id:5 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Pentagonal cupola", url:"uploads/Jackpike/J5-Pentagonal-cupola-Golden.vZome" },
+  { id:5 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Pentagonal cupola", url:"https://raw.githubusercontent.com/david-hall/vzome-sharing/main/2023/12/12/01-36-51-J5-Pentagonal-cupola-Golden/J5-Pentagonal-cupola-Golden.vZome" },
   { id:6 , field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Pentagonal rotunda", url:"uploads/Jackpike/J6-Pentagonal-rotunda-Golden.vZome" },
   { id:7 , field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Elongated triangular pyramid", url:"uploads/david-hall/J7-Elongated-triangular-pyramid-Polygon12.vZome"},
   { id:8 , field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Elongated square pyramid", url:"uploads/david-hall/J8-Elongated-Square-Pyramid-Root2.vZome"},
