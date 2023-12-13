@@ -24,7 +24,7 @@ export const models = [
   { id:23, field:"", edgescene:"Edges", facescene:"Faces", title:"Gyroelongated square cupola"},
   { id:24, field:"", edgescene:"Edges", facescene:"Faces", title:"Gyroelongated pentagonal cupola"},
   { id:25, field:"", edgescene:"Edges", facescene:"Faces", title:"Gyroelongated pentagonal rotunda"},
-  { id:26, field:"", edgescene:"Edges", facescene:"Faces", title:"Gyrobifastigium"},
+  { id:26, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Gyrobifastigium", url: "https://raw.githubusercontent.com/John-Kostick/vzome-sharing/main/2023/12/13/13-08-14-J26-Gyrobifastigium-Polygon12/J26-Gyrobifastigium-Polygon12.vZome" },
   { id:27, field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Triangular orthobicupola", url:"uploads/john-kostick/J27-Triangular-Orthobicupola-Root2.vZome"},
   { id:28, field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Square orthobicupola", url:"uploads/john-kostick/J28-Square-Orthobicupola-Root2.vZome"},
   { id:29, field:"", edgescene:"Edges", facescene:"Faces", title:"Square gyrobicupola"},
