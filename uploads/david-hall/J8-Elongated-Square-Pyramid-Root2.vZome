@@ -1,66 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="35" field="rootTwo" version="7.1">
-  <EditHistory editNumber="37" lastStickyEdit="37">
-    <StrutCreation anchor="0 0 0 0 0 0" index="5" len="0 2" symm="octahedral"/>
-    <StrutCreation anchor="0 0 0 2 0 0" index="0" len="0 2" symm="octahedral"/>
-    <StrutCreation anchor="0 2 0 2 0 0" index="4" len="0 2" symm="octahedral"/>
-    <StrutCreation anchor="0 0 0 2 0 0" index="5" len="4 0" symm="octahedral"/>
-    <SelectManifestation point="0 2 0 2 0 2"/>
-    <ApplyTool copyColors="true" name="octahedral.builtin/octahedral around origin" selectInputs="true"/>
-    <SelectManifestation point="0 0 4 2 0 0"/>
-    <ConvexHull3d mode="noPanels"/>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="36" field="rootTwo" version="7.1">
+  <EditHistory editNumber="41" lastStickyEdit="41">
+    <StrutCreation anchor="0 0 0 0 0 0" index="4" len="4 0" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 0 0" index="0" len="4 0" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 4 0" dir="green" index="2" len="0 4" symm="octahedral"/>
+    <StrutCreation anchor="4 0 0 0 0 0" dir="green" index="14" len="0 4" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 -4 0" dir="green" index="12" len="0 4" symm="octahedral"/>
+    <StrutCreation anchor="-4 0 0 0 0 0" dir="green" index="0" len="0 4" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 4 0" index="5" len="0 2" symm="octahedral"/>
+    <SelectManifestation point="0 0 0 2 4 0"/>
+    <StrutCreation anchor="-4 0 0 0 0 0" index="5" len="0 2" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 -4 0" index="5" len="0 2" symm="octahedral"/>
+    <StrutCreation anchor="4 0 0 0 0 0" index="5" len="0 2" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 4 0" index="7" len="0 2" symm="octahedral"/>
+    <StrutCreation anchor="-4 0 0 0 0 0" index="7" len="0 2" symm="octahedral"/>
+    <StrutCreation anchor="0 0 0 0 -4 0" index="7" len="0 2" symm="octahedral"/>
+    <StrutCreation anchor="4 0 0 0 0 0" index="7" len="0 2" symm="octahedral"/>
+    <StrutCreation anchor="-4 0 0 2 0 0" dir="green" index="1" len="0 4" symm="octahedral"/>
     <BeginBlock/>
-    <DeselectAll/>
-    <SelectManifestation endSegment="0 2 0 2 0 2" startSegment="0 -2 0 2 0 2"/>
-    <SelectManifestation endSegment="0 2 0 2 0 2" startSegment="0 0 4 2 0 0"/>
-    <DeselectAll/>
-    <SelectAll originLast="true"/>
-    <EndBlock/>
-    <ApplyTool copyColors="true" deleteInputs="true" name="scaling.builtin/scale up"/>
-    <BeginBlock/>
-    <DeselectAll/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
     <SelectManifestation point="0 0 0 0 0 0"/>
-    <SelectManifestation endSegment="0 0 4 0 0 0" startSegment="0 0 0 0 0 0"/>
-    <SelectManifestation point="0 0 4 0 0 0"/>
-    <SelectManifestation endSegment="4 0 4 0 0 0" startSegment="0 0 4 0 0 0"/>
-    <SelectManifestation endSegment="0 0 4 4 0 0" startSegment="0 0 4 0 0 0"/>
+    <AdjustSelectionByClass balls="DESELECT" originLast="true" panels="IGNORE" struts="IGNORE"/>
     <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation point="4 0 0 0 0 0"/>
+    <SelectManifestation point="0 0 0 0 -4 0"/>
+    <SelectManifestation point="0 0 0 0 4 0"/>
+    <EndBlock/>
+    <SelectCoplanar/>
+    <Delete/>
+    <SelectAll originLast="true"/>
+    <ConvexHull3d mode=""/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="DESELECT" struts="IGNORE"/>
+    <BookmarkTool name="tool-0"/>
+    <InvertSelection/>
+    <BookmarkTool name="tool-1"/>
+    <Hide/>
     <Snapshot id="0"/>
+    <ShowHidden/>
+    <InvertSelection/>
     <Delete/>
     <Snapshot id="1"/>
-    <SelectAll originLast="true"/>
-    <ConvexHull3d mode="onlyPanels"/>
-    <BeginBlock/>
-    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="DESELECT" struts="IGNORE"/>
-    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="SELECT"/>
-    <EndBlock/>
-    <Hide/>
-    <SelectManifestation point="4 0 4 0 0 0"/>
-    <Delete/>
-    <Snapshot id="2"/>
   </EditHistory>
   <notes>
-    <page snapshot="1" title="Edges">
-      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+    <page snapshot="0" title="Edges">
+      <ViewModel distance="87.2588882446289" far="174.5177764892578" near="0.21814720332622528" parallel="false" stereoAngle="0.0" width="39.26649475097656">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0032497895881533623" y="0.9131312370300293" z="-0.4076492190361023"/>
-        <LookDirection x="-0.23152297735214233" y="-0.395888090133667" z="-0.8886333703994751"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="2" title="Faces">
-      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+    <page snapshot="1" title="Faces">
+      <ViewModel distance="87.2588882446289" far="174.5177764892578" near="0.21814720332622528" parallel="false" stereoAngle="0.0" width="39.26649475097656">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0032497895881533623" y="0.9131312370300293" z="-0.4076492190361023"/>
-        <LookDirection x="-0.23152297735214233" y="-0.395888090133667" z="-0.8886333703994751"/>
-      </ViewModel>
-      <content xml:space="preserve"/>
-    </page>
-    <page snapshot="0" title="Scaffolding">
-      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
-        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-        <UpDirection x="0.0032497895881533623" y="0.9131312370300293" z="-0.4076492190361023"/>
-        <LookDirection x="-0.23152297735214233" y="-0.395888090133667" z="-0.8886333703994751"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
@@ -71,19 +67,17 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
+    <ViewModel distance="87.2588882446289" far="174.5177764892578" near="0.21814720332622528" parallel="false" stereoAngle="0.0" width="39.26649475097656">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-      <UpDirection x="0.0032497895881533623" y="0.9131312370300293" z="-0.4076492190361023"/>
-      <LookDirection x="-0.23152297735214233" y="-0.395888090133667" z="-0.8886333703994751"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
     </ViewModel>
   </Viewing>
   <SymmetrySystem name="octahedral" renderingStyle="small octahedra">
     <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
-    <Direction color="255,255,255" name="0" orbit="[[0,1,2],[0,1,2]]" prototype="1 0 0 -1 1 0"/>
     <Direction color="0,141,54" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
     <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
     <Direction color="240,160,0" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
-    <Direction color="255,255,255" name="1" orbit="[[0,0,1],[0,1,2]]" prototype="0 0 1 0 0 1"/>
   </SymmetrySystem>
   <OtherSymmetries>
     <SymmetrySystem name="synestructics" renderingStyle="small octahedra">
@@ -93,5 +87,8 @@
       <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
     </SymmetrySystem>
   </OtherSymmetries>
-  <Tools/>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="Edges" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-1" label="Faces" selectInputs="true"/>
+  </Tools>
 </vzome:vZome>
