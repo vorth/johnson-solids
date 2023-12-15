@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="35" field="polygon30" version="7.1">
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="37" field="polygon30" version="7.1">
   <EditHistory editNumber="290" lastStickyEdit="286">
     <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="4" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
     <StrutCreation anchor="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" index="0" len="0 2 0 1 0 0 0 0" symm="octahedral"/>
@@ -321,34 +321,48 @@
     <Snapshot id="10"/>
     <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="SELECT" struts="IGNORE"/>
     <BookmarkTool name="tool-7"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <SelectAll originLast="true"/>
     <BookmarkTool name="tool-8"/>
     <DeselectAll/>
     <Snapshot id="11"/>
     <SelectAll originLast="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <ApplyTool copyColors="true" name="tool-7" selectInputs="true"/>
     <DeselectAll/>
     <Snapshot id="12"/>
     <SelectAll originLast="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <ApplyTool copyColors="true" name="tool-6" selectInputs="true"/>
-    <CentralSymmetry/>
+    <CentralSymmetry>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </CentralSymmetry>
     <SelectAll originLast="true"/>
     <ConvexHull3d mode=""/>
     <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="DESELECT" struts="IGNORE"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="13"/>
     <SelectAll originLast="true"/>
     <BookmarkTool name="tool-9"/>
     <ConvexHull3d mode="noPanels"/>
     <BookmarkTool name="tool-10"/>
     <InvertSelection/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="14"/>
     <SelectAll originLast="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <ApplyTool copyColors="true" name="tool-9" selectInputs="true"/>
     <DeselectAll/>
   </EditHistory>
@@ -442,7 +456,7 @@ At this point, select all and save the file as the common starting point for J38
       </ViewModel>
       <content xml:space="preserve">In either case, use a 3D convex hull to generate the balls, struts and panels.</content>
     </page>
-    <page snapshot="11" title="J39 Edges">
+    <page snapshot="11" title="J38 Edges">
       <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="0.0" z="1.0"/>
@@ -450,7 +464,7 @@ At this point, select all and save the file as the common starting point for J38
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="12" title="J39 Faces">
+    <page snapshot="12" title="J38 Faces">
       <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="0.0" z="1.0"/>
@@ -458,7 +472,7 @@ At this point, select all and save the file as the common starting point for J38
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="13" title="J38 Faces">
+    <page snapshot="13" title="J39 Faces">
       <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="-0.0" y="0.0" z="1.0"/>
@@ -466,7 +480,7 @@ At this point, select all and save the file as the common starting point for J38
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="14" title="J38 Edges">
+    <page snapshot="14" title="J39 Edges">
       <ViewModel distance="122.59416961669922" far="245.18833923339844" near="0.3064854145050049" parallel="false" stereoAngle="0.0" width="55.16737747192383">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="-0.0" y="0.0" z="1.0"/>
@@ -483,8 +497,8 @@ At this point, select all and save the file as the common starting point for J38
   <Viewing>
     <ViewModel distance="120.16664123535156" far="240.33328247070312" near="0.30041658878326416" parallel="false" stereoAngle="0.0" width="54.07498550415039">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-      <UpDirection x="-0.33658042550086975" y="-0.6863377094268799" z="-0.6447176337242126"/>
-      <LookDirection x="0.10846273601055145" y="0.6518513560295105" z="-0.7505554556846619"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
     </ViewModel>
   </Viewing>
   <SymmetrySystem name="antiprism30" renderingStyle="thin antiprism">
@@ -528,14 +542,14 @@ At this point, select all and save the file as the common starting point for J38
   <Tools>
     <Tool copyColors="true" deleteInputs="false" id="tool-0" label="bookmark 0" selectInputs="true"/>
     <Tool copyColors="true" deleteInputs="false" id="tool-1" label="bookmark 1" selectInputs="true"/>
-    <Tool copyColors="true" deleteInputs="false" id="tool-10" label="J38 Edges" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-10" label="J39 Edges" selectInputs="true"/>
     <Tool copyColors="true" deleteInputs="false" id="tool-2" label="bookmark 2" selectInputs="true"/>
     <Tool copyColors="true" deleteInputs="false" id="tool-3" label="bookmark 3" selectInputs="true"/>
     <Tool copyColors="true" deleteInputs="false" id="tool-4" label="bookmark 4" selectInputs="true"/>
     <Tool copyColors="true" deleteInputs="false" id="tool-5" label="bookmark 5" selectInputs="true"/>
     <Tool copyColors="true" deleteInputs="false" id="tool-6" label="bookmark 6" selectInputs="true"/>
-    <Tool copyColors="true" deleteInputs="false" id="tool-7" label="J39 Faces" selectInputs="true"/>
-    <Tool copyColors="true" deleteInputs="false" id="tool-8" label="J39 Edges" selectInputs="true"/>
-    <Tool copyColors="true" deleteInputs="false" id="tool-9" label="J38 Faces" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-7" label="J38 Faces" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-8" label="J38 Edges" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-9" label="J39 Faces" selectInputs="true"/>
   </Tools>
 </vzome:vZome>
