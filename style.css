@@ -119,7 +119,7 @@ table {
 thead th:nth-child(1)   /* id column */
 {
   text-align: center;
-  width: 6%;
+  width: 4ch;
 }
 tbody td:nth-child(1)   /* id column */
 {
@@ -137,6 +137,10 @@ td {
 th.ident, td.done {
   background-color: var(--color-ident);
   font-weight: bold;
+}
+
+th.ident, td.ident {
+  width: 45ch; /* J77 and J78 have 45 characters in their names. No others are longer. */
 }
 
 td.todo {
@@ -167,11 +171,13 @@ tr.selected > td:last-child.root3 {
 }
 
 td.polygon12, 
+td.polygon20, 
 td.polygon30, 
 td.polygon60 {
   background-color: var(--color-red-panel);
 }
 tr.selected > td:last-child.polygon12,
+tr.selected > td:last-child.polygon20,
 tr.selected > td:last-child.polygon30,
 tr.selected > td:last-child.polygon60 {
   background-color: var(--color-red-strut);

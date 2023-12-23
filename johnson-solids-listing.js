@@ -57,7 +57,8 @@ function fillRow(tr, jsolid) {
   // Id column
   let td = tr.insertCell();
   td.className = url ? "ident done" : "ident todo";
-  td.innerHTML = "J" + id;
+  const zomeBuildable = field == "Golden" && zometool == "true" && url ? "*" : "";
+  td.innerHTML = zomeBuildable + "J" + id;
   // title column
   td = tr.insertCell();
   td.className = "title";
