@@ -173,12 +173,14 @@ tr.selected > td:last-child.root3 {
 td.polygon12, 
 td.polygon20, 
 td.polygon30, 
+td.polygon40, 
 td.polygon60 {
   background-color: var(--color-red-panel);
 }
 tr.selected > td:last-child.polygon12,
 tr.selected > td:last-child.polygon20,
 tr.selected > td:last-child.polygon30,
+tr.selected > td:last-child.polygon40,
 tr.selected > td:last-child.polygon60 {
   background-color: var(--color-red-strut);
 }
