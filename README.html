@@ -7,6 +7,20 @@
 	<title>Making Johnson Solids with vZome</title>
 	<meta name="description" content="A collection of the Johnson solids, using vZome technology"/>
 	<meta name="keywords" content="geometry,zome,vzome,Johnson solids"/>
+	<style>
+table {
+  border-collapse: collapse;
+  cursor: default; /* disable the "I-beam" text cursor */
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 5px;
+  white-space: nowrap;
+}
+	</style>
 </head>
 <body>
 	<h1>
@@ -53,7 +67,7 @@
 			<li>Capture a scene containing only balls and struts forming the edges of the Johnson solid. Name the scene "Edges".
 				This criteria is optional for non-zometool constructible models, but still recommended.</li>
 			<li>Note that "lifelike shapes" must be visible in the main model at the time the "Edges" scene is captured, not just when saving the finished model.</li>
-			<li>Retain the default strut and panel colors.</li>
+			<li>Retain the default strut and panel colors to correspond with the color criteria below.</li>
 			<li>If the model can be built from real zometool struts, then use an orientation that shows how it can be accomplished.</li>
 		</ol>
 		<ul>
@@ -69,6 +83,18 @@
 		If the model uses the golden field, each panels-only scene should have a corresponding comparably named edges-only scene for each solid. (e.g. J38 Edges)
 		See J38 and J39 as an example.
 		In any case, each scene must have a unique name. No scene should be named "default scene" since that is reserved for the main model.
+	</p>
+	<h3>Colors</h3> 
+	<p>
+		All struts should retain their default vZome colors since they are only shown when the models are zometool constructible
+		in which case, they will thereby match the actual zometool strut colors.<br>
+		Panels should use a common coloring scheme for all models, based on the default vZome panel colors in icosahedral symmetry.<br>
+		The following colors should be used for the corresponding types of faces regardless of the field in which it is built.
+		<table>
+			<tr><td> Triangles and Hexagons </td><td> Yellow </td><td> rgb( 248, 208, 128 ) </td></tr>
+			<tr><td> Squares   and Octagons </td><td> Blue   </td><td> rgb( 128, 186, 202 ) </td></tr>
+			<tr><td> Pentagons and Decagons </td><td> Red    </td><td> rgb( 215, 128, 128 ) </td></tr>
+		</table>
 	</p>
 	<p>
 		Some of these criteria are necessary for proper operation of the site. Others are just conventions and preferences 
