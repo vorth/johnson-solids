@@ -9,14 +9,14 @@
   --color-text-selected: rgb(240, 240, 240);
   --color-text-selected-dark: rgb(15, 15, 15);
 
-  --color-blu-strut: rgb(0, 118, 189);
+  --color-blu-strut: rgb(0, 118, 149);
   --color-yel-strut: rgb(240, 160, 0);
   --color-red-strut: rgb(175, 0, 0);
   --color-grn-strut: rgb(0, 141, 54);
 
   --color-blu-panel: rgb(127, 186, 202);
-  --color-yel-panel: rgb(248, 208, 128);
-  --color-red-panel: rgb(215, 128, 128);
+  --color-yel-panel: rgb(247, 207, 127);
+  --color-red-panel: rgb(215, 127, 127);
   --color-grn-panel: rgb(127, 198, 154);
 
   --checbox-scale: 1.75;
