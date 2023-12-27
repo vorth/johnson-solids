@@ -93,6 +93,10 @@ input[type=checkbox]
   margin-right: 0.5rem;
 }
 
+#download {
+  display: none;
+}
+
 .no-zome {
   display: none;
 }
