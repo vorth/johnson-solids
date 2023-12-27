@@ -10,7 +10,8 @@ const zomeSwitch = document.getElementById( "zome-switch" );
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   // Just logging this to the console for now. Not actually using the scenes list.
   const scenes = e.detail;
-  console.log( "These scenes were discovered in " + viewer.src + "\n" + JSON.stringify( scenes, null, 2 ) );
+  //console.log( "These scenes were discovered in " + viewer.src);
+  console.log( JSON.stringify( scenes, null, 2 ) );
 } );
 
 for (const jsolid of models) {
@@ -83,6 +84,6 @@ function setScene( jsolidSceneData ) {
   const scene = field == "Golden" && zometool == "true" && showEdges.checked ? edgescene : facescene;
   zomeSwitch.className = ( zometool == "true" ) ? 'zome' : 'no-zome';
   viewer.scene = scene;
-  console.log("Setting scene to '" + scene + "'");
+  //console.log("Setting scene to '" + scene + "'");
   viewer.update({ camera: false });
 }
