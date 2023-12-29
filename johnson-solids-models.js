@@ -82,7 +82,7 @@ export const models = [
   { id:81, field:"", edgescene:"Edges", facescene:"Faces", title:"Metabidiminished rhombicosidodecahedron"},
   { id:82, field:"", edgescene:"Edges", facescene:"Faces", title:"Gyrate bidiminished rhombicosidodecahedron"},
   { id:83, field:"", edgescene:"Edges", facescene:"Faces", title:"Tridiminished rhombicosidodecahedron"},
-  { id:84, field:"", edgescene:"Edges", facescene:"Faces", title:"Snub disphenoid"},
+  { id:84, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Snub disphenoid", url:"uploads/david-hall/J84-Rational-Approximation-Golden.vZome"},
   { id:85, field:"", edgescene:"Edges", facescene:"Faces", title:"Snub square antiprism"},
   { id:86, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Sphenocorona", url:"uploads/david-hall/J86-Rational-Approximation-Golden.vZome"},
   { id:87, field:"", edgescene:"Edges", facescene:"Faces", title:"Augmented sphenocorona"},
