@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="34" field="golden" version="7.1">
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="35" field="golden" version="7.1">
   <EditHistory editNumber="33" lastStickyEdit="33">
     <LoadVEF projection="Quaternion" quaternion="1 0 0 0 0 0 0 0" scale="10 0">vZome VEF 6 field rational
 
@@ -45,10 +45,14 @@
     <BookmarkTool name="tool-2"/>
     <InvertSelection/>
     <BookmarkTool name="tool-3"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <Snapshot id="0"/>
     <SelectAll originLast="true"/>
-    <Hide/>
+    <Hide>
+      <Boolean attrName="org.vorthmann.zome.editor.Command.LOADING_FROM_FILE" value="true"/>
+    </Hide>
     <ApplyTool copyColors="true" name="tool-3" selectInputs="true"/>
     <DeselectAll/>
     <Snapshot id="1"/>
@@ -79,8 +83,8 @@
   <Viewing>
     <ViewModel distance="64.64297485351562" far="129.28579711914062" near="0.16160747408866882" parallel="false" stereoAngle="0.0" width="29.08934211730957">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-      <UpDirection x="0.0" y="1.0" z="0.0"/>
-      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      <UpDirection x="0.06857223063707352" y="0.9156631231307983" z="-0.3960529565811157"/>
+      <LookDirection x="0.7722749710083008" y="-0.3000389337539673" z="-0.5599706768989563"/>
     </ViewModel>
   </Viewing>
   <SymmetrySystem name="icosahedral" renderingStyle="lifelike">
