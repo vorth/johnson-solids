@@ -6,6 +6,85 @@ const tbody = table.createTBody();
 const viewer = document.getElementById( "viewer" );
 const showEdges = document.getElementById( "showEdges" );
 const zomeSwitch = document.getElementById( "zome-switch" );
+const downloadLink = document.getElementById( "download" );
+
+const shapeColors = new Map();
+shapeColors.set( 3, "#F0A000"); // yellow strut
+shapeColors.set( 4, "#007695"); // blue strut
+shapeColors.set( 5, "#AF0000"); // red strut
+shapeColors.set( 6, "#008D36"); // green strut
+shapeColors.set( 8, "#DC4C00"); // orange strut
+shapeColors.set(10, "#6C00C6"); // purple strut
+
+// include a "download=true" query param in the URL to make the ID in the viewer become the recolor download link
+if(new URL(document.location).searchParams.get("download") == "true") {
+	document.getElementById( "index" ).addEventListener( "click", downloadShapesJson );
+}
+
+function downloadShapesJson() {
+	const url = viewer.src.replace( ".vZome", ".shapes.json" );
+	const filename = url.substring(url.lastIndexOf( "/" ) + 1);
+	alert( url );
+	
+	fetch(url)
+	.then(response => {
+        if(!response.ok) {
+			console.log(response);
+			throw new Error(response.url + "\n\n" + response.status + " " + response.statusText) 
+        } 
+		downloadLink.setAttribute( "download", filename );
+		return response.json(); 
+	} )
+	.then(modelData => {
+		var stringifiedData = JSON.stringify( recolor(modelData), null, 2);
+		const blobUrl = URL.createObjectURL(new Blob([stringifiedData], { type: "application/json" }));
+		downloadLink.href = blobUrl;
+		downloadLink.click();
+	})
+	.catch(error => {
+		console.log(error);
+		alert(error);
+	});
+}
+
+function recolor(modelData) {
+	const faceMap = new Map();
+	for(const shape of modelData.shapes) {
+		faceMap.set(shape.id, shape.vertices.length);
+	}
+	// Get a list of facescene(s) of all models that use the selected jsolid's URL.
+	// There may be only one facescene, but there may be more than one. e.g. J38 & J39
+	const url = viewer.src;
+	const facescenes = [];
+	for(const model of models) {
+		if(model.url == url) {
+			facescenes.push(model.facescene);
+		}
+	}
+	const snapshots = [];
+	if(facescenes.includes("default scene")) {
+		snapshots.push(0);
+	}
+	for(const scene of modelData.scenes) {
+		if(facescenes.includes(scene.title)) {
+			snapshots.push(scene.snapshot);
+		}
+	}
+	console.log(snapshots);
+	for(const snapshot of snapshots) {
+		const ss = modelData.snapshots[snapshot];
+		for(let i = 0; i < ss.length; i++) {
+			const item = ss[i];
+			const shapeGuid = item.shape;
+			const nVertices = faceMap.get(shapeGuid);
+			const newColor = shapeColors.get(nVertices);
+			if(newColor) {
+				modelData.snapshots[snapshot][i].color = newColor;
+			}
+		}
+	}
+	return modelData;
+}
 
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   // Just logging this to the console for now. Not actually using the scenes list.
@@ -38,6 +117,14 @@ function selectJohnsonSolid( jsolid, tr ) {
 		  selectedRow = tr;
 		  selectedRow.className = "selected";
 		  document.getElementById( "index" ).textContent = "J" +id;
+		  //const shapes = url.replace( ".vZome", ".shapes.json" );
+		  //downloadLink.href = shapes;
+		  //const filename = shapes.substring(shapes.lastIndexOf('/')+1);
+		  //downloadLink.download = filename;
+		  /* 
+		  Downloads local files as expected, but it won't directly download cross origin files in-situ.
+		  One possible react solution is https://medium.com/charisol-community/downloading-resources-in-html5-a-download-may-not-work-as-expected-bf63546e2baa
+		  */
 		  switchModel(jsolid);
 	  } else {
 		  alert("Johnson solid J" + id + " is not yet available.\n\nPlease help us collect the full set.");
