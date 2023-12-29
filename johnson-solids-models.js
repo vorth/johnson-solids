@@ -35,7 +35,7 @@ export const models = [
   { id:34, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Pentagonal orthobirotunda", url: "uploads/john-kostick/J34-Pentagonal-orthobirotunda-Golden.vZome"},
   { id:35, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Elongated triangular orthobicupola", url:"uploads/john-kostick/J35-Elongated-orthobicupola-Polygon12.vZome"},
   { id:36, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Elongated triangular gyrobicupola", url: "uploads/john-kostick/J36-Elongated-triangular-gyrobicupola-Polygon12.vZome"},
-  { id:37, field:"Root2", edgescene:"Balls & Struts", facescene:"default scene", title:"Elongated square gyrobicupola", url:"uploads/john-kostick/J37-Elongated-Square-Gyrobicupola-Root2.vZome"},
+  { id:37, field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Elongated square gyrobicupola", url:"uploads/john-kostick/J37-Elongated-Square-Gyrobicupola-Root2.vZome"},
   { id:38, field:"Polygon30", edgescene:"J38 Edges", facescene:"J38 Faces", title:"Elongated pentagonal orthobicupola", url:"uploads/david-hall/How-to-build-J38-and-J39.vZome"},
   { id:39, field:"Polygon30", edgescene:"J39 Edges", facescene:"J39 Faces", title:"Elongated pentagonal gyrobicupola", url:"uploads/david-hall/How-to-build-J38-and-J39.vZome"},
   { id:40, field:"", edgescene:"Edges", facescene:"Faces", title:"Elongated pentagonal orthocupolarotunda"},
