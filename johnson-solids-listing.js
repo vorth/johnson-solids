@@ -12,9 +12,9 @@ const shapeColors = new Map();
 shapeColors.set( 3, "#F0A000"); // yellow strut
 shapeColors.set( 4, "#007695"); // blue strut
 shapeColors.set( 5, "#AF0000"); // red strut
-shapeColors.set( 6, "#F7CF7F"); // yellow panel
-shapeColors.set( 8, "#7FBACA"); // blue panel
-shapeColors.set(10, "#D77F7F"); // red panel
+shapeColors.set( 6, "#008D36"); // green strut
+shapeColors.set( 8, "#DC4C00"); // orange strut
+shapeColors.set(10, "#6C00C6"); // purple strut
 
 // include a "download=true" query param in the URL to make the ID in the viewer become the recolor download link
 if(new URL(document.location).searchParams.get("download") == "true") {
