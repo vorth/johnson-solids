@@ -159,29 +159,31 @@ tr.selected > td:last-child.golden {
   background-color: var(--color-blu-strut);
 }
 
-td.root2 {
+td.root2,
+td.polygon12 {
   background-color: var(--color-grn-panel);
 }
-tr.selected > td:last-child.root2 {
+tr.selected > td:last-child.root2,
+tr.selected > td:last-child.polygon12 {
   background-color: var(--color-grn-strut);
 }
 
-td.root3 {
+td.root3, 
+td.polygon16 {
   background-color: var(--color-yel-panel);
 }
-tr.selected > td:last-child.root3 {
+tr.selected > td:last-child.root3,
+tr.selected > td:last-child.polygon16 {
   color: var(--color-text-selected-dark); /* better contrast with yellow */
   background-color: var(--color-yel-strut);
 }
 
-td.polygon12, 
 td.polygon20, 
 td.polygon30, 
 td.polygon40, 
 td.polygon60 {
   background-color: var(--color-red-panel);
 }
-tr.selected > td:last-child.polygon12,
 tr.selected > td:last-child.polygon20,
 tr.selected > td:last-child.polygon30,
 tr.selected > td:last-child.polygon40,
