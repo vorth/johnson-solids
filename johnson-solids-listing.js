@@ -62,19 +62,23 @@ function recolor(modelData) {
 		}
 	}
 	const snapshots = [];
+	if(facescenes.includes("default scene")) {
+		snapshots.push(0);
+	}
 	for(const scene of modelData.scenes) {
 		if(facescenes.includes(scene.title)) {
 			snapshots.push(scene.snapshot);
 		}
 	}
+	console.log(snapshots);
 	for(const snapshot of snapshots) {
-		for(let i = 0; i < modelData.snapshots[snapshot].length; i++) {
-			const item = modelData.snapshots[snapshot][i];
+		const ss = modelData.snapshots[snapshot];
+		for(let i = 0; i < ss.length; i++) {
+			const item = ss[i];
 			const shapeGuid = item.shape;
 			const nVertices = faceMap.get(shapeGuid);
 			const newColor = shapeColors.get(nVertices);
 			if(newColor) {
-				const oldColor = modelData.snapshots[snapshot][i].color;
 				modelData.snapshots[snapshot][i].color = newColor;
 			}
 		}
