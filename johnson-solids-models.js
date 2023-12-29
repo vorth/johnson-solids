@@ -54,7 +54,7 @@ export const models = [
   { id:53, field:"Polygon40", edgescene:"Edges", facescene:"Faces", title:"Biaugmented pentagonal prism", url:"uploads/john-kostick/J53-Biaugmented-pentagonal-prism-Polygon-40.vZome"},
   { id:54, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Augmented hexagonal prism", url:"uploads/ThynStyx/J54-Augmented-Hexagonal-Prism-Polygon12.vZome"},
   { id:55, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Parabiaugmented hexagonal prism", url:"uploads/ThynStyx/J55-Parabiaugmented-Hexagonal-Prism-Polygon12.vZome"},
-  { id:56, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Metabiaugmented hexagonal prism", url:"https://raw.githubusercontent.com/ThynStyx/vzome-sharing/main/2023/12/19/16-08-33-J56-Metabiaugmented-Hexagonal-Prism-Polygon12/J56-Metabiaugmented-Hexagonal-Prism-Polygon12.vZome"},
+  { id:56, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Metabiaugmented hexagonal prism", url:"uploads/ThynStyx/J56-Metabiaugmented-Hexagonal-Prism-Polygon12.vZome"},
   { id:57, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Triaugmented hexagonal prism", url:"uploads/ThynStyx/J57-Triaugmented-Hexagonal-Prism-Polygon12.vZome"},
   { id:58, field:"", edgescene:"Edges", facescene:"Faces", title:"Augmented dodecahedron"},
   { id:59, field:"", edgescene:"Edges", facescene:"Faces", title:"Parabiaugmented dodecahedron"},
