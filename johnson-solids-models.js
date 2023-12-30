@@ -9,7 +9,7 @@ export const models = [
   { id:8 , field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Elongated square pyramid", url:"uploads/david-hall/J8-Elongated-Square-Pyramid-Root2.vZome"},
   { id:9 , field:"", edgescene:"Edges", facescene:"Faces", title:"Elongated pentagonal pyramid"},
   { id:10, field:"", edgescene:"Edges", facescene:"Faces", title:"Gyroelongated square pyramid"},
-  { id:11, field:"", edgescene:"Edges", facescene:"Faces", title:"Gyroelongated pentagonal pyramid"},
+  { id:11, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Gyroelongated pentagonal pyramid",url:"uploads/ThynStyx/J11-Gyroelongated-pentagonal-pyramid-Golden.vZome"},
   { id:12, field:"", edgescene:"Edges", facescene:"Faces", title:"Triangular dipyramid"},
   { id:13, field:"", edgescene:"Edges", facescene:"Faces", title:"Pentagonal dipyramid"},
   { id:14, field:"Polygon12", edgescene:"Edges", facescene:"Faces", title:"Elongated triangular dipyramid", url:"uploads/john-kostick/J14-Elongated-triangular-bipyramid-Polygon12.vZome"},
