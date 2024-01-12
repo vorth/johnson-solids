@@ -40,6 +40,8 @@ function downloadShapesJson() {
 		const blobUrl = URL.createObjectURL(new Blob([stringifiedData], { type: "application/json" }));
 		downloadLink.href = blobUrl;
 		downloadLink.click();
+		URL.revokeObjectURL(blobUrl); // release blobURL resources now that we're done with it.
+		downloadLink.href = ""; // remove the reference to the released blobURL.
 	})
 	.catch(error => {
 		console.log(error);
