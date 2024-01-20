@@ -62,7 +62,7 @@ export const models = [
   { id:61, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Triaugmented dodecahedron", url:"https://raw.githubusercontent.com/John-Kostick/vzome-sharing/main/2024/01/02/14-51-08-J61-Triaugmented-dodecahedron-Golden/J61-Triaugmented-dodecahedron-Golden.vZome"},
   { id:62, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Metabidiminished icosahedron", url:"https://raw.githubusercontent.com/ThynStyx/vzome-sharing/main/2024/01/09/16-44-45-J62-Metabidiminished-icosahedron-Golden/J62-Metabidiminished-icosahedron-Golden.vZome"},
   { id:63, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Tridiminished icosahedron", url:"uploads/david-hall/J63-Tridiminished-icosahedron-Golden.vZome"},
-  { id:64, field:"Polygon40", edgescene:"Edges", facescene:"Faces", title:"Augmented tridiminished icosahedron", url:"uploads/john-kostick/J64-Augmented-tridiminished-icosahedron-Polygon40.vZome"},
+  { id:64, field:"Polygon20", edgescene:"Edges", facescene:"Faces", title:"Augmented tridiminished icosahedron", url:"uploads/david-hall/J64-Augmented-tridiminished-icosahedron-Polygon20.vZome"},
   { id:65, field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Augmented truncated tetrahedron", url:"uploads/john-kostick/J65-Augmented-truncated-tetrahedron-Root2.vZome"},
   { id:66, field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Augmented truncated cube", url:"uploads/ThynStyx/J66-Augmented-truncated-cube-Root2.vZome"},
   { id:67, field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Biaugmented truncated cube", url:"uploads/ThynStyx/J67-Biaugmented-truncated-cube-Root2.vZome"},
