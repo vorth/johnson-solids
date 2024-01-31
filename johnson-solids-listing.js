@@ -147,13 +147,12 @@ function fillRow(tr, jsolid) {
   // Id column
   let td = tr.insertCell();
   td.className = url ? "ident done" : "ident todo";
-  const zomeBuildable = field == "Golden" && zometool == "true" && url ? "*" : "";
-  td.innerHTML = zomeBuildable + "J" + id;
+  td.innerHTML = "J" + id;
   // title column
   td = tr.insertCell();
   td.className = "title";
-  if(!!field) {
-    td.className += " " + field.toLowerCase();
+  if(field == "Golden" && zometool == "true" && url) {
+    td.className += " zometool";
   }
   if(!!title) {
     td.innerHTML = title;  

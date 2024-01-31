@@ -152,46 +152,25 @@ td.todo {
   font-style: italic;
 }
 
-td.golden {
-  background-color: var(--color-blu-panel);
-}
-tr.selected > td:last-child.golden {
-  background-color: var(--color-blu-strut);
-}
-
-td.root2,
-td.polygon12 {
+td.title {
   background-color: var(--color-grn-panel);
 }
-tr.selected > td:last-child.root2,
-tr.selected > td:last-child.polygon12 {
+tr.selected > td:last-child.title {
   background-color: var(--color-grn-strut);
 }
 
-td.root3, 
-td.polygon16 {
-  background-color: var(--color-yel-panel);
+td.title.zometool {
+  background-color: var(--color-blu-panel);
+  font-style: italic;
+  font-weight: bold;
 }
-tr.selected > td:last-child.root3,
-tr.selected > td:last-child.polygon16 {
-  color: var(--color-text-selected-dark); /* better contrast with yellow */
-  background-color: var(--color-yel-strut);
-}
-
-td.polygon20, 
-td.polygon30, 
-td.polygon40, 
-td.polygon60 {
-  background-color: var(--color-red-panel);
-}
-tr.selected > td:last-child.polygon20,
-tr.selected > td:last-child.polygon30,
-tr.selected > td:last-child.polygon40,
-tr.selected > td:last-child.polygon60 {
-  background-color: var(--color-red-strut);
+tr.selected > td:last-child.title.zometool {
+  background-color: var(--color-blu-strut);
+  font-style: italic;
+  font-weight: bold;
 }
 
-th, td
+th
 {
   background-color: whitesmoke;
 }
