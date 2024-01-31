@@ -83,7 +83,7 @@ export const models = [
   { id:82, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Gyrate bidiminished rhombicosidodecahedron", url:"https://raw.githubusercontent.com/John-Kostick/vzome-sharing/main/2024/01/05/13-19-25-J82-Gyrate-bidiminished-rhombicosidodecahedron-Golden/J82-Gyrate-bidiminished-rhombicosidodecahedron-Golden.vZome"},
   { id:83, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Tridiminished rhombicosidodecahedron", url:"https://raw.githubusercontent.com/John-Kostick/vzome-sharing/main/2024/01/05/09-21-55-J83-Tridiminished-rhombicosidodecahedron-Golden/J83-Tridiminished-rhombicosidodecahedron-Golden.vZome"},
   { id:84, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Snub disphenoid", url:"uploads/david-hall/J84-Rational-Approximation-Golden.vZome"},
-  { id:85, field:"", edgescene:"Edges", facescene:"Faces", title:"Snub square antiprism"},
+  { id:85, field:"Root2", edgescene:"Edges", facescene:"Faces", title:"Snub square antiprism", url:"uploads/david-hall/J85-Rational-Approximation-Root2.vZome"},
   { id:86, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Sphenocorona", url:"uploads/david-hall/J86-Rational-Approximation-Golden.vZome"},
   { id:87, field:"", edgescene:"Edges", facescene:"Faces", title:"Augmented sphenocorona"},
   { id:88, field:"", edgescene:"Edges", facescene:"Faces", title:"Sphenomegacorona"},
