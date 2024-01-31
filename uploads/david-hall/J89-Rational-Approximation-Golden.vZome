@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="39" field="golden" version="7.1">
+  <EditHistory editNumber="30" lastStickyEdit="28">
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <Delete/>
+    <LoadVEF projection="Quaternion" quaternion="1 0 0 0 0 0 0 0" scale="1 2">vZome VEF 6 field rational
+
+dimension 3
+
+14
+-1             -1              195241/100000
+-1              1              195241/100000
+ 1             -1              195241/100000
+ 1              1              195241/100000
+-1             -143369/100000  0
+-1              143369/100000  0
+ 1             -143369/100000  0
+ 1              143369/100000  0
+-220259/100000  0              705908/1000000
+ 220259/100000  0              705908/1000000
+ 0             -1             -167688/100000
+ 0              1             -167688/100000
+-167132/100000  0             -122224/100000
+ 167132/100000  0             -122224/100000
+
+0
+
+0
+</LoadVEF>
+    <SelectAll originLast="true"/>
+    <ConvexHull3d mode=""/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="DESELECT" struts="IGNORE"/>
+    <BookmarkTool name="tool-0"/>
+    <Delete/>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-1"/>
+    <BeginBlock/>
+    <SelectManifestation>
+      <polygonVertex at="-1 -2 -1 -2 195241/100000 195241/50000"/>
+      <polygonVertex at="-1 -2 -143369/100000 -143369/50000 0 0"/>
+      <polygonVertex at="1 2 -143369/100000 -143369/50000 0 0"/>
+      <polygonVertex at="1 2 -1 -2 195241/100000 195241/50000"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-1 -2 -1 -2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 -1 -2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 1 2 195241/100000 195241/50000"/>
+      <polygonVertex at="-1 -2 1 2 195241/100000 195241/50000"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-1 -2 1 2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 1 2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 143369/100000 143369/50000 0 0"/>
+      <polygonVertex at="-1 -2 143369/100000 143369/50000 0 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <setItemColor blue="0" green="160" red="240"/>
+    <BeginBlock/>
+    <SelectManifestation>
+      <polygonVertex at="-1 -2 1 2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 1 2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 143369/100000 143369/50000 0 0"/>
+      <polygonVertex at="-1 -2 143369/100000 143369/50000 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-1 -2 -1 -2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 -1 -2 195241/100000 195241/50000"/>
+      <polygonVertex at="1 2 1 2 195241/100000 195241/50000"/>
+      <polygonVertex at="-1 -2 1 2 195241/100000 195241/50000"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="-1 -2 -1 -2 195241/100000 195241/50000"/>
+      <polygonVertex at="-1 -2 -143369/100000 -143369/50000 0 0"/>
+      <polygonVertex at="1 2 -143369/100000 -143369/50000 0 0"/>
+      <polygonVertex at="1 2 -1 -2 195241/100000 195241/50000"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <setItemColor blue="149" green="118" red="0"/>
+    <Snapshot id="0"/>
+    <SelectAll originLast="true"/>
+    <Hide/>
+    <ApplyTool copyColors="true" name="tool-0" selectInputs="true"/>
+    <DeselectAll/>
+    <Snapshot id="1"/>
+    <ShowHidden/>
+    <DeselectAll/>
+  </EditHistory>
+  <notes>
+    <page snapshot="0" title="Faces">
+      <ViewModel distance="106.57825469970703" far="213.15650939941406" near="0.26644572615623474" parallel="false" stereoAngle="0.0" width="47.96022415161133">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.0071881418116390705" y="0.9987858533859253" z="-0.048738230019807816"/>
+        <LookDirection x="0.005387084558606148" y="-0.04869948700070381" z="-0.9987998008728027"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="1" title="Edges">
+      <ViewModel distance="106.57825469970703" far="213.15650939941406" near="0.26644572615623474" parallel="false" stereoAngle="0.0" width="47.96022415161133">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="-0.0071881418116390705" y="0.9987858533859253" z="-0.048738230019807816"/>
+        <LookDirection x="0.005387084558606148" y="-0.04869948700070381" z="-0.9987998008728027"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+  </notes>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="106.57825469970703" far="213.15650939941406" near="0.26644572615623474" parallel="false" stereoAngle="0.0" width="47.96022415161133">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="-0.0071881418116390705" y="0.9987858533859253" z="-0.048738230019807816"/>
+      <LookDirection x="0.005387084558606148" y="-0.04869948700070381" z="-0.9987998008728027"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+    <Direction color="18,205,148" name="turquoise" orbit="[[-1,2,1],[1,-2,1]]"/>
+    <Direction color="30,30,30" name="black" orbit="[[0,1,1],[1,-1,1]]"/>
+    <Direction color="255,255,255" name="9" orbit="[[67132,0,143369],[122224,0,143369]]" prototype="-16783/25000 16783/25000 -143369/100000 143369/100000 -7639/6250 7639/6250"/>
+    <Direction color="0,141,54" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="175,135,255" name="lavender" orbit="[[1,2,1],[-1,0,1]]"/>
+    <Direction color="255,255,255" name="12" orbit="[[120259,0,143369],[352954,0,716845]]" prototype="-120259/100000 0 143369/100000 0 176477/250000 0"/>
+    <Direction color="255,255,255" name="0" orbit="[[-1952401269,0,-1360013444],[17119631,0,1574940408]]" prototype="-2342566027/625000000 2342566027/1250000000 733738463/156250000 -733738463/312500000 -4312086927/1250000000 4312086927/2500000000"/>
+    <Direction color="255,255,255" name="11" orbit="[[88545,0,321358],[0,0,1]]" prototype="53127/100000 -53127/100000 0 0 -482037/250000 482037/250000"/>
+    <Direction color="255,255,255" name="10" orbit="[[12500,0,20961],[43369,0,167688]]" prototype="-1 1 43369/100000 -43369/100000 20961/12500 -20961/12500"/>
+    <Direction color="100,113,0" name="olive" orbit="[[1,0,1],[3,-2,1]]"/>
+    <Direction color="117,0,50" name="maroon" orbit="[[-1,2,1],[1,0,1]]"/>
+    <Direction color="255,255,255" name="6" orbit="[[0,0,1],[43369,0,195241]]" prototype="0 0 -195241/25000 195241/50000 43369/25000 -43369/50000"/>
+    <Direction color="255,255,255" name="5" orbit="[[88545,0,321358],[-982004516,0,1561551071]]" prototype="-69109162653/12500000000 69109162653/25000000000 -12148398501/3125000000 12148398501/6250000000 -7616764863/5000000000 7616764863/10000000000"/>
+    <Direction color="255,255,255" name="8" orbit="[[11366,0,41783],[25000,0,41783]]" prototype="-41783/25000 41783/25000 1 -1 -5683/12500 5683/12500"/>
+    <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+    <Direction color="255,255,255" name="7" orbit="[[1205,0,1249],[500000,0,623251]]" prototype="120259/100000 0 1 0 -623251/500000 0"/>
+    <Direction color="255,255,255" name="2" orbit="[[0,0,1],[43369,0,167688]]" prototype="0 0 20961/3125 -20961/6250 -43369/25000 43369/50000"/>
+    <Direction color="255,255,255" name="1" orbit="[[307759079,0,96221035],[1433320103,0,96221035]]" prototype="-124650272619/25000000000 124650272619/50000000000 23479487419/5000000000 -23479487419/10000000000 5215512571/5000000000 -5215512571/10000000000"/>
+    <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,255,255" name="4" orbit="[[0,0,1],[1205,0,1249]]" prototype="623251/125000 -623251/250000 0 0 120259/25000 -120259/50000"/>
+    <Direction color="108,0,198" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
+    <Direction color="255,255,255" name="3" orbit="[[0,0,1],[11366,0,41783]]" prototype="-5683/3125 5683/6250 0 0 -41783/6250 41783/12500"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="icosahedral" renderingStyle="printable">
+      <Direction color="255,255,255" name="5" orbit="[[88545,0,321358],[0,0,1]]" prototype="-53127/25000 53127/50000 0 0 482037/62500 -482037/125000"/>
+      <Direction color="0,141,54" name="green" orbit="[[2,-1,1],[5,-3,1]]"/>
+      <Direction color="255,255,255" name="6" orbit="[[985383192,-1084985481,-748263571],[855075367,1239599669,-748263571]]" prototype="69109162653/781250000 -69109162653/1250000000 -12148398501/195312500 12148398501/312500000 7616764863/312500000 -7616764863/500000000"/>
+      <Direction color="255,255,255" name="3" orbit="[[320090432,1805945833,2004855687],[1318839497,-1133656121,2004855687]]" prototype="4 -2 -43369/25000 43369/50000 -20961/3125 20961/6250"/>
+      <Direction color="154,117,74" name="sand" orbit="[[-8,5,1],[5,-3,1]]"/>
+      <Direction color="255,255,255" name="4" orbit="[[1089994220,-987054733,-1911943729],[2135700571,-545548257,-1241382205]]" prototype="2342566027/39062500 -2342566027/62500000 -733738463/9765625 733738463/15625000 4312086927/78125000 -4312086927/125000000"/>
+      <Direction color="255,255,255" name="1" orbit="[[-1371629118,-706113711,889635259],[958479483,1241331673,889635259]]" prototype="41783/6250 -41783/12500 4 -2 -5683/3125 5683/6250"/>
+      <Direction color="255,255,255" name="2" orbit="[[-2038182344,230034795,-1572187989],[605017321,-383016681,-1173431057]]" prototype="16783/6250 -16783/12500 143369/25000 -143369/50000 15278/3125 -7639/3125"/>
+      <Direction color="255,255,255" name="0" orbit="[[11366,0,41783],[0,0,1]]" prototype="-90928/3125 11366/625 0 0 334264/3125 -41783/625"/>
+      <Direction color="30,30,30" name="black" orbit="[[-2,3,11],[-7,5,11]]"/>
+      <Direction color="255,51,143" name="rose" orbit="[[0,0,1],[-4,3,5]]"/>
+      <Direction color="18,205,148" name="turquoise" orbit="[[2,-1,2],[-3,2,2]]"/>
+      <Direction color="255,255,255" name="13" orbit="[[3120002,-1613021,1397069],[7527161,-4517071,1397069]]" prototype="1246502/15625 -623251/12500 0 0 -240518/3125 120259/2500"/>
+      <Direction color="255,255,255" name="12" orbit="[[43369,0,195241],[0,0,1]]" prototype="0 0 -390482/3125 195241/2500 -86738/3125 43369/2500"/>
+      <Direction color="108,0,198" name="purple" orbit="[[2,-1,1],[0,0,1]]"/>
+      <Direction color="220,76,0" name="orange" orbit="[[-4,3,5],[3,-1,5]]"/>
+      <Direction color="107,53,26" name="brown" orbit="[[2,-1,3],[5,-3,3]]"/>
+      <Direction color="255,255,255" name="11" orbit="[[43369,0,167688],[0,0,1]]" prototype="0 0 -335376/3125 41922/625 86738/3125 -43369/2500"/>
+      <Direction color="255,255,255" name="10" orbit="[[-1979135750,1374202747,1077908421],[978681519,2143436895,1077908421]]" prototype="120259/25000 -120259/50000 -143369/25000 143369/50000 176477/62500 -176477/125000"/>
+      <Direction color="255,255,255" name="9" orbit="[[2017236274,-529756,1871095329],[-844911408,-766367855,1871095329]]" prototype="-124650272619/1562500000 124650272619/2500000000 -23479487419/312500000 23479487419/500000000 -5215512571/312500000 5215512571/500000000"/>
+      <Direction color="255,255,255" name="7" orbit="[[0,0,1],[43369,0,195241]]" prototype="0 0 -43369/25000 43369/50000 195241/25000 -195241/50000"/>
+      <Direction color="255,255,255" name="8" orbit="[[-1076106242,1475395669,1067235867],[649448609,-969511655,1067235867]]" prototype="120259/25000 -120259/50000 -4 2 -623251/125000 623251/250000"/>
+      <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+      <Direction color="18,73,48" name="spruce" orbit="[[-5,4,11],[-5,4,11]]"/>
+      <Direction color="175,0,0" name="red" orbit="[[-1,1,1],[0,0,1]]"/>
+      <Direction color="255,126,106" name="coral" orbit="[[-3,2,2],[-1,1,2]]"/>
+      <Direction color="117,0,50" name="maroon" orbit="[[5,-3,1],[0,0,1]]"/>
+      <Direction color="230,245,62" name="sulfur" orbit="[[-1,1,3],[0,0,1]]"/>
+      <Direction color="240,160,0" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+      <Direction color="116,195,0" name="apple" orbit="[[2,-1,3],[-1,1,3]]"/>
+      <Direction color="136,37,0" name="cinnamon" orbit="[[5,-3,2],[2,-1,2]]"/>
+      <Direction color="0,0,153" name="navy" orbit="[[-1,1,2],[2,-1,2]]"/>
+      <Direction color="175,135,255" name="lavender" orbit="[[-3,2,1],[-3,2,1]]"/>
+      <Direction color="100,113,0" name="olive" orbit="[[3,-1,5],[0,0,1]]"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="Edges" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-1" label="Faces" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>

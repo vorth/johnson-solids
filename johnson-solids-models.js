@@ -87,7 +87,7 @@ export const models = [
   { id:86, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Sphenocorona", url:"uploads/david-hall/J86-Rational-Approximation-Golden.vZome"},
   { id:87, field:"", edgescene:"Edges", facescene:"Faces", title:"Augmented sphenocorona"},
   { id:88, field:"", edgescene:"Edges", facescene:"Faces", title:"Sphenomegacorona"},
-  { id:89, field:"", edgescene:"Edges", facescene:"Faces", title:"Hebesphenomegacorona"},
+  { id:89, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"false", title:"Hebesphenomegacorona", url:"uploads/david-hall/J89-Rational-Approximation-Golden.vZome"},
   { id:90, field:"", edgescene:"Edges", facescene:"Faces", title:"Disphenocingulum"},
   { id:91, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Bilunabirotunda", url:"uploads/david-hall/J91-Bilunabirotunda-Golden.vZome"},
   { id:92, field:"Golden", edgescene:"Edges", facescene:"Faces", zometool:"true", title:"Triangular hebesphenorotunda", url:"uploads/david-hall/J92-Triangular-Hebesphenorotunda-Golden.vZome"},
