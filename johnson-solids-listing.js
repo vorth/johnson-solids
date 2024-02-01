@@ -16,7 +16,7 @@ shapeColors.set( 6, "#008D36"); // green strut
 shapeColors.set( 8, "#DC4C00"); // orange strut
 shapeColors.set(10, "#6C00C6"); // purple strut
 
-// include a "download=true" query param in the URL to make the ID in the viewer become the recolor download link
+// include a "download=true" query param in the URL to make the ID in the viewer become the .shapes.json download link
 if(new URL(document.location).searchParams.get("download") == "true") {
 	document.getElementById( "index" ).addEventListener( "click", downloadShapesJson );
 }
@@ -36,8 +36,8 @@ function downloadShapesJson() {
 		return response.json(); 
 	} )
 	.then(modelData => {
-		var stringifiedData = JSON.stringify( recolor(modelData), null, 2);
-		const blobUrl = URL.createObjectURL(new Blob([stringifiedData], { type: "application/json" }));
+		//var stringifiedData = JSON.stringify( recolor(modelData), null, 2);
+		const blobUrl = URL.createObjectURL(new Blob([modelData], { type: "application/json" }));
 		downloadLink.href = blobUrl;
 		downloadLink.click();
 		URL.revokeObjectURL(blobUrl); // release blobURL resources now that we're done with it.
@@ -49,6 +49,7 @@ function downloadShapesJson() {
 	});
 }
 
+/*
 function recolor(modelData) {
 	const faceMap = new Map();
 	for(const shape of modelData.shapes) {
@@ -87,6 +88,7 @@ function recolor(modelData) {
 	}
 	return modelData;
 }
+*/
 
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   // Just logging this to the console for now. Not actually using the scenes list.
@@ -123,6 +125,7 @@ function selectJohnsonSolid( jsolid, tr ) {
 		  /* 
 		  Downloads local files as expected, but it won't directly download cross origin files in-situ.
 		  One possible react solution is https://medium.com/charisol-community/downloading-resources-in-html5-a-download-may-not-work-as-expected-bf63546e2baa
+		  The local downloadShapesJson() method works with local files as well as cross origin files.
 		  */
 		  switchModel(jsolid);
 	  } else {
