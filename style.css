@@ -153,10 +153,10 @@ td.todo {
 }
 
 td.title {
-  background-color: var(--color-grn-panel);
+  background-color: var(--color-yel-panel);
 }
 tr.selected > td:last-child.title {
-  background-color: var(--color-grn-strut);
+  background-color: var(--color-yel-strut);
 }
 
 td.title.zometool {
