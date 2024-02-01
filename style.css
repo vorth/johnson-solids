@@ -30,7 +30,7 @@ html, body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 29rem minmax( 0, 1fr );
+  grid-template-columns: 29.2rem minmax( 0, 1fr );
   grid-template-rows: min-content minmax( 0, 1fr );
   grid-template-areas:
     "intro intro"
