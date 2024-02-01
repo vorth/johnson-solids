@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="39" field="rootTwo" version="7.1">
+  <EditHistory editNumber="79" lastStickyEdit="77">
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <Delete/>
+    <LoadVEF projection="Quaternion" quaternion="1 0 0 0 0 0 0 0" scale="10 0">vZome VEF 6 field rational
+
+dimension 3
+
+10
+-17054539/10000000  0                 -1
+-17054539/10000000  0                  1
+-1                  15818769/10000000  0
+ 0                 -10447139/10000000 -1
+ 0                 -10447139/10000000  1
+ 0                  8696859/10000000  -15788553/10000000
+ 0                  8696859/10000000   15788553/10000000
+ 1                  15818769/10000000  0
+ 17054539/10000000  0                 -1
+ 17054539/10000000  0                  1
+
+0
+
+0
+
+10
+0 1 2 3 4 5 6 7 8 9 
+</LoadVEF>
+    <SelectAll originLast="true"/>
+    <ConvexHull3d mode=""/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="DESELECT" struts="IGNORE"/>
+    <BookmarkTool name="tool-0"/>
+    <Hide/>
+    <BeginBlock/>
+    <SelectAll originLast="true"/>
+    <SelectManifestation>
+      <polygonVertex at="0 0 -10447139/1000000 0 10 0"/>
+      <polygonVertex at="-17054539/1000000 0 0 0 10 0"/>
+      <polygonVertex at="-17054539/1000000 0 0 0 -10 0"/>
+      <polygonVertex at="0 0 -10447139/1000000 0 -10 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 -10447139/1000000 0 10 0"/>
+      <polygonVertex at="0 0 -10447139/1000000 0 -10 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 -10 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 10 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <setItemColor blue="0" green="160" red="240"/>
+    <BeginBlock/>
+    <SelectManifestation>
+      <polygonVertex at="0 0 -10447139/1000000 0 10 0"/>
+      <polygonVertex at="-17054539/1000000 0 0 0 10 0"/>
+      <polygonVertex at="-17054539/1000000 0 0 0 -10 0"/>
+      <polygonVertex at="0 0 -10447139/1000000 0 -10 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 -10447139/1000000 0 10 0"/>
+      <polygonVertex at="0 0 -10447139/1000000 0 -10 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 -10 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 10 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <setItemColor blue="149" green="118" red="0"/>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-1"/>
+    <DeselectAll/>
+    <Snapshot id="0"/>
+    <ShowHidden/>
+    <InvertSelection/>
+    <Hide/>
+    <Snapshot id="1"/>
+    <BeginBlock/>
+    <SelectManifestation point="17054539/1000000 0 0 0 -10 0"/>
+    <SelectManifestation point="0 0 -10447139/1000000 0 10 0"/>
+    <EndBlock/>
+    <NewCentroid/>
+    <SelectManifestation point="17054539/1000000 0 0 0 -10 0"/>
+    <SymmetryTool name="tool-2" symmetry="octahedral"/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation endSegment="17054539/1000000 0 0 0 -10 0" startSegment="0 0 -10447139/1000000 0 -10 0"/>
+    <EndBlock/>
+    <ApplyTool copyColors="true" name="tool-2" selectInputs="true"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="17054539/1000000 0 0 0 -10 0" startSegment="13750839/500000 0 -17054539/1000000 0 -10 0"/>
+    <SelectManifestation endSegment="17054539/1000000 0 0 0 -10 0" startSegment="0 0 -10447139/1000000 0 -10 0"/>
+    <EndBlock/>
+    <Delete/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="17054539/1000000 0 0 0 -10 0" startSegment="13750839/500000 0 -17054539/1000000 0 -10 0"/>
+    <DeselectAll/>
+    <EndBlock/>
+    <StrutCreation anchor="17054539/2000000 0 -10447139/2000000 0 0 0" dir="5" index="5" len="8 0" symm="octahedral"/>
+    <BeginBlock/>
+    <SelectManifestation endSegment="17054539/1000000 0 0 0 -10 0" startSegment="13750839/500000 0 -17054539/1000000 0 -10 0"/>
+    <SelectManifestation point="17054539/2000000 0 -10447139/2000000 0 0 0"/>
+    <SelectManifestation endSegment="17054539/2000000 10447139/2000000 -10447139/2000000 -17054539/2000000 0 0" startSegment="17054539/2000000 0 -10447139/2000000 0 0 0"/>
+    <EndBlock/>
+    <Delete/>
+    <SelectAll originLast="true"/>
+    <ConvexHull3d mode=""/>
+    <BeginBlock/>
+    <DeselectAll/>
+    <SelectManifestation>
+      <polygonVertex at="0 0 -10447139/1000000 0 10 0"/>
+      <polygonVertex at="0 0 -10447139/1000000 0 -10 0"/>
+      <polygonVertex at="17054539/2000000 10447139/2000000 -10447139/2000000 -17054539/2000000 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 -10447139/1000000 0 10 0"/>
+      <polygonVertex at="17054539/2000000 10447139/2000000 -10447139/2000000 -17054539/2000000 0 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 10 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="17054539/1000000 0 0 0 -10 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 10 0"/>
+      <polygonVertex at="17054539/2000000 10447139/2000000 -10447139/2000000 -17054539/2000000 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="0 0 -10447139/1000000 0 -10 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 -10 0"/>
+      <polygonVertex at="17054539/2000000 10447139/2000000 -10447139/2000000 -17054539/2000000 0 0"/>
+    </SelectManifestation>
+    <SelectManifestation>
+      <polygonVertex at="10 0 15818769/1000000 0 0 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 10 0"/>
+      <polygonVertex at="17054539/1000000 0 0 0 -10 0"/>
+    </SelectManifestation>
+    <EndBlock/>
+    <MapToColor blue="0" colorMapper="CopyLastSelectedColor" green="160" red="240"/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="SELECT" struts="IGNORE"/>
+    <BookmarkTool name="tool-3"/>
+    <Hide/>
+    <SelectAll originLast="true"/>
+    <BookmarkTool name="tool-4"/>
+    <DeselectAll/>
+    <Snapshot id="2"/>
+    <ShowHidden/>
+    <InvertSelection/>
+    <Hide/>
+    <Snapshot id="3"/>
+    <ShowHidden/>
+    <DeselectAll/>
+  </EditHistory>
+  <notes>
+    <page snapshot="0" title="J86 Faces">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.5053091049194336" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="1" title="J86 Edges">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.5053091049194336" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="3" title="J87 Faces">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.5053091049194336" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+    <page snapshot="2" title="J87 Edges">
+      <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.5053091049194336" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+        <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+        <UpDirection x="0.0" y="1.0" z="0.0"/>
+        <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      </ViewModel>
+      <content xml:space="preserve"/>
+    </page>
+  </notes>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="202.1236114501953" far="404.2471618652344" near="0.5053091049194336" parallel="false" stereoAngle="0.0" width="90.95561981201172">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="octahedral" renderingStyle="octahedra">
+    <Direction color="255,255,255" name="9" orbit="[[-443587267,1119576770,931108137],[-1210984192,1657220864,931108137]]" prototype="-10447139/16000000 17054539/32000000 17054539/16000000 10447139/32000000 0 -5/8"/>
+    <Direction color="0,141,54" name="green" orbit="[[0,0,1],[-1,0,1]]"/>
+    <Direction color="240,160,0" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+    <Direction color="0,118,149" name="blue" orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="255,255,255" name="13" orbit="[[-443587267,1119576770,-188468633],[0,0,1]]" prototype="-17054539/12800000 10447139/25600000 -10447139/12800000 -17054539/25600000 0 0"/>
+    <Direction color="255,255,255" name="12" orbit="[[1657220864,-1210984192,-188468633],[-443587267,1119576770,-188468633]]" prototype="-10447139/16000000 -17054539/32000000 17054539/16000000 -10447139/32000000 0 5/8"/>
+    <Direction color="255,255,255" name="0" orbit="[[10000000,0,15818769],[2351513,0,5272923]]" prototype="0 -7054539/16000000 0 15818769/16000000 0 5/8"/>
+    <Direction color="255,255,255" name="11" orbit="[[0,302746048,559788385],[0,414305216,559788385]]" prototype="0 10447139/25600000 0 -17054539/25600000 -200000006893921/128000000000000 0"/>
+    <Direction color="255,255,255" name="10" orbit="[[0,0,1],[-443587267,1119576770,931108137]]" prototype="17054539/12800000 10447139/25600000 10447139/12800000 -17054539/25600000 0 0"/>
+    <Direction color="255,255,255" name="6" orbit="[[678272187,0,1531566890],[5788553,0,19143998]]" prototype="0 -60473817799867/256000000000000 0 -98721102892067/256000000000000 0 -163246030253461/128000000000000"/>
+    <Direction color="255,255,255" name="5" orbit="[[10447139,0,17054539],[0,0,1]]" prototype="0 -17054539/16000000 0 10447139/16000000 0 0"/>
+    <Direction color="255,255,255" name="8" orbit="[[0,0,1],[2373970,0,5262851]]" prototype="0 0 0 15788553/12800000 0 712191/1280000"/>
+    <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+    <Direction color="255,255,255" name="7" orbit="[[5788553,0,19143998],[0,0,1]]" prototype="0 0 0 9571999/8000000 0 -5788553/16000000"/>
+    <Direction color="255,255,255" name="2" orbit="[[8696859,0,17054539],[5788553,0,17054539]]" prototype="0 -17054539/16000000 0 8696859/16000000 0 -5788553/16000000"/>
+    <Direction color="255,255,255" name="1" orbit="[[0,0,1],[2351513,0,5272923]]" prototype="0 15818769/12800000 0 7054539/12800000 0 0"/>
+    <Direction color="255,255,255" name="4" orbit="[[-986058094,0,-147547869],[-1122776167,0,-147547869]]" prototype="0 178536372751257/256000000000000 0 211380962892067/256000000000000 0 -20842948184949/25600000000000"/>
+    <Direction color="255,255,255" name="3" orbit="[[10000000,0,15788553],[2373970,0,5262851]]" prototype="0 5/8 0 712191/1600000 0 15788553/16000000"/>
+  </SymmetrySystem>
+  <OtherSymmetries>
+    <SymmetrySystem name="synestructics" renderingStyle="small octahedra">
+      <Direction color="240,160,0" name="yellow" orbit="[[1,0,1],[-1,0,1]]"/>
+      <Direction color="220,76,0" name="orange" orbit="[[0,0,1],[0,0,1]]"/>
+      <Direction color="255,41,183" name="magenta" orbit="[[0,0,1],[-1,0,1]]"/>
+      <Direction color="107,53,26" name="brown" orbit="[[1,0,1],[-2,0,1]]"/>
+    </SymmetrySystem>
+  </OtherSymmetries>
+  <Tools>
+    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="J86 Edges" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-1" label="J86 Faces" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-2" label="octahedral 2" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-3" label="J87 Faces" selectInputs="true"/>
+    <Tool copyColors="true" deleteInputs="false" id="tool-4" label="J87 Edges" selectInputs="true"/>
+  </Tools>
+</vzome:vZome>
