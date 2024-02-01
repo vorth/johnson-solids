@@ -30,13 +30,15 @@ html, body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: minmax( 0, 3fr ) minmax( 0, 5fr );
+  grid-template-columns: 29.2rem minmax( 0, 1fr );
   grid-template-rows: min-content minmax( 0, 1fr );
   grid-template-areas:
     "intro intro"
     "table viewer";
   gap: 7px;
   height: 100vh;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .intro {
@@ -67,6 +69,8 @@ html, body {
 .table {
   grid-area: table; /* added for the grid above */
   overflow: auto;
+  margin-block-end: 8px;
+  margin-inline-start: 8px;
 }
 
 #zome-switch {
