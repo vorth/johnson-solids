@@ -41,7 +41,8 @@ html, body {
   margin: auto;
 }
 
-.intro {
+.intro,
+.references {
   grid-area: intro;
   max-width: 800px;
   margin: auto;
