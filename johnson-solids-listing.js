@@ -96,12 +96,9 @@ viewer .addEventListener( "vzome-scenes-discovered", (e) => {
 } );
 
 for (const jsolid of models) {
-  // include a "ready" query param in the URL to show only the jsolids that have a URL defined 
-  if(jsolid.url || (new URL(document.location)).searchParams.get("ready") == null) {
-    const tr = tbody.insertRow();
-    fillRow(tr, jsolid);
-    tr.addEventListener("click", () => selectJohnsonSolid( jsolid, tr ) );
-  }
+  const tr = tbody.insertRow();
+  fillRow(tr, jsolid);
+  tr.addEventListener("click", () => selectJohnsonSolid( jsolid, tr ) );
 }
 selectJohnsonSolid( models[ 0 ], tbody .rows[ 0 ] );
 showEdges.addEventListener("change", // use "change" here, not "click"
