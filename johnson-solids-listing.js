@@ -102,7 +102,16 @@ for (const jsolid of models) {
   fillRow(tr, jsolid);
   tr.addEventListener("click", () => selectJohnsonSolid( jsolid, tr ) );
 }
-selectJohnsonSolid( models[ 0 ], tbody .rows[ 0 ] );
+
+var initialId = 1;
+const jId = parseInt(new URL(document.location).searchParams.get("J"));
+if(jId >= 1 && jId <= 92) {
+	initialId = jId;
+}
+const initialRow = tbody.rows[ initialId - 1 ];
+selectJohnsonSolid( models[ initialId - 1 ], initialRow );
+initialRow.scrollIntoView(); // Note that this scrolls the table header row out of view. That's OK for now...
+
 showEdges.addEventListener("change", // use "change" here, not "click"
   () => {
     setScene(selectedRow.dataset);
