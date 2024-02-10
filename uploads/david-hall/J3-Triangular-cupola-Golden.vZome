@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="39" field="golden" version="7.1">
   <EditHistory editNumber="30" lastStickyEdit="28">
-    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="0" len="2 2" symm="octahedral"/>
-    <SelectManifestation point="2 2 0 0 2 2"/>
+    <StrutCreation anchor="0 0 0 0 0 0" dir="green" index="0" len="2 4" symm="octahedral"/>
+    <SelectManifestation point="2 4 0 0 2 4"/>
     <ApplyTool copyColors="true" name="octahedral.builtin/octahedral around origin" selectInputs="true"/>
     <BeginBlock/>
-    <DeselectAll/>
-    <SelectManifestation point="-2 -2 -2 -2 0 0"/>
-    <SelectManifestation point="-2 -2 0 0 -2 -2"/>
-    <SelectManifestation point="0 0 -2 -2 -2 -2"/>
-    <SelectManifestation point="0 0 0 0 0 0"/>
-    <SelectManifestation endSegment="2 2 0 0 2 2" startSegment="0 0 0 0 0 0"/>
+    <SelectManifestation point="-2 -4 0 0 -2 -4"/>
+    <SelectManifestation point="-2 -4 -2 -4 0 0"/>
+    <SelectManifestation point="0 0 -2 -4 -2 -4"/>
+    <InvertSelection/>
     <EndBlock/>
     <Delete/>
     <SelectAll originLast="true"/>
     <ConvexHull3d mode=""/>
-    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="DESELECT" struts="IGNORE"/>
-    <BookmarkTool name="tool-0"/>
+    <BeginBlock/>
+    <AdjustSelectionByClass balls="IGNORE" originLast="true" panels="IGNORE" struts="DESELECT"/>
+    <AdjustSelectionByClass balls="DESELECT" originLast="true" panels="IGNORE" struts="IGNORE"/>
+    <EndBlock/>
     <Hide/>
-    <AdjustSelectionByOrbitLength orbit="yellow" panels="SELECT" struts="IGNORE" symmetry="icosahedral"/>
-    <setItemColor blue="0" green="160" red="240"/>
-    <AdjustSelectionByOrbitLength orbit="blue" panels="SELECT" struts="IGNORE" symmetry="icosahedral"/>
-    <setItemColor blue="149" green="118" red="0"/>
-    <SelectManifestation>
-      <polygonVertex at="2 2 0 0 -2 -2"/>
-      <polygonVertex at="2 2 -2 -2 0 0"/>
-      <polygonVertex at="0 0 -2 -2 2 2"/>
-      <polygonVertex at="-2 -2 0 0 2 2"/>
-      <polygonVertex at="-2 -2 2 2 0 0"/>
-      <polygonVertex at="0 0 2 2 -2 -2"/>
-    </SelectManifestation>
-    <setItemColor blue="54" green="141" red="0"/>
     <Snapshot id="0"/>
     <ShowHidden/>
     <InvertSelection/>
     <Hide/>
+    <AdjustSelectionByOrbitLength orbit="blue" panels="SELECT" struts="IGNORE" symmetry="icosahedral"/>
+    <setItemColor blue="149" green="118" red="0"/>
+    <AdjustSelectionByOrbitLength orbit="yellow" panels="SELECT" struts="IGNORE" symmetry="icosahedral"/>
+    <setItemColor blue="0" green="160" red="240"/>
+    <SelectManifestation>
+      <polygonVertex at="-2 -4 2 4 0 0"/>
+      <polygonVertex at="0 0 2 4 -2 -4"/>
+      <polygonVertex at="2 4 0 0 -2 -4"/>
+      <polygonVertex at="2 4 -2 -4 0 0"/>
+      <polygonVertex at="0 0 -2 -4 2 4"/>
+      <polygonVertex at="-2 -4 0 0 2 4"/>
+    </SelectManifestation>
+    <setItemColor blue="54" green="151" red="0"/>
     <Snapshot id="1"/>
     <ShowHidden/>
     <DeselectAll/>
   </EditHistory>
   <notes>
-    <page snapshot="0" title="Faces">
-      <ViewModel distance="80.55010986328125" far="161.1002197265625" near="0.20137527585029602" parallel="false" stereoAngle="0.0" width="36.24754333496094">
+    <page snapshot="0" title="Edges">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="1.0" z="0.0"/>
         <LookDirection x="0.0" y="0.0" z="-1.0"/>
       </ViewModel>
       <content xml:space="preserve"/>
     </page>
-    <page snapshot="1" title="Edges">
-      <ViewModel distance="80.55010986328125" far="161.1002197265625" near="0.20137527585029602" parallel="false" stereoAngle="0.0" width="36.24754333496094">
+    <page snapshot="1" title="Faces">
+      <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="1.0" z="0.0"/>
         <LookDirection x="0.0" y="0.0" z="-1.0"/>
@@ -63,7 +63,7 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="80.55010986328125" far="161.1002197265625" near="0.20137527585029602" parallel="false" stereoAngle="0.0" width="36.24754333496094">
+    <ViewModel distance="108.73126983642578" far="217.46253967285156" near="0.27182817459106445" parallel="false" stereoAngle="0.0" width="48.92906951904297">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>
@@ -106,7 +106,5 @@
       <Direction color="108,0,198" name="purple" orbit="[[0,0,1],[2,-1,1]]"/>
     </SymmetrySystem>
   </OtherSymmetries>
-  <Tools>
-    <Tool copyColors="true" deleteInputs="false" id="tool-0" label="Edges" selectInputs="true"/>
-  </Tools>
+  <Tools/>
 </vzome:vZome>
