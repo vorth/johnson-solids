@@ -256,7 +256,11 @@ for (const jsolid of models) {
 }
 
 var initialId = 1;
-const jId = parseInt(new URL(document.location).searchParams.get("J"));
+const searchParams = new URL(document.location).searchParams;
+let jId = parseInt(searchParams.get("J")); // upper case
+if(Number.isNaN(jId)) {
+	jId = parseInt(searchParams.get("j")); // lower case
+}
 if(jId >= 1 && jId <= 92) {
 	initialId = jId;
 }
