@@ -1114,22 +1114,22 @@
     "ambientColor": "#292929"
   },
   "camera": {
-    "width": 4.5,
+    "width": 12.5,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 25
     },
-    "farClipDistance": 20,
-    "fieldOfView": 4.4,
+    "farClipDistance": 50,
+    "fieldOfView": 17.024865344407683,
     "perspective": true,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "viewDistance": 10,
-    "nearClipDistance": 0.025,
+    "viewDistance": 25,
+    "nearClipDistance": 0.1,
     "stereo": false,
     "lookDirection": {
       "x": 0,
@@ -15206,22 +15206,22 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 12.5,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25
         },
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "farClipDistance": 50,
+        "fieldOfView": 17.024865344407683,
         "perspective": true,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
+        "viewDistance": 25,
+        "nearClipDistance": 0.1,
         "stereo": false,
         "lookDirection": {
           "x": 0,
@@ -15240,22 +15240,22 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 12.5,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25
         },
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "farClipDistance": 50,
+        "fieldOfView": 17.024865344407683,
         "perspective": true,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
+        "viewDistance": 25,
+        "nearClipDistance": 0.1,
         "stereo": false,
         "lookDirection": {
           "x": 0,
@@ -15407,7 +15407,7 @@
     [
       {
         "shape": "e854095d-541b-4150-b8b3-179182d3d582",
-        "color": "#F7CF7F",
+        "color": "#F0A000",
         "position": {
           "x": 0,
           "y": 0,
@@ -15417,7 +15417,7 @@
       },
       {
         "shape": "58177570-fd76-45ab-a38f-5b971be5e78c",
-        "color": "#F7CF7F",
+        "color": "#F0A000",
         "position": {
           "x": 0,
           "y": 0,
@@ -15427,7 +15427,7 @@
       },
       {
         "shape": "e8b33d13-3617-4468-a643-317021aaa4a3",
-        "color": "#F7CF7F",
+        "color": "#F0A000",
         "position": {
           "x": 0,
           "y": 0,
@@ -15437,7 +15437,7 @@
       },
       {
         "shape": "393ff5d1-2ba4-42b0-8ec7-0bc3df77beea",
-        "color": "#F7CF7F",
+        "color": "#F0A000",
         "position": {
           "x": 0,
           "y": 0,
@@ -15447,7 +15447,7 @@
       },
       {
         "shape": "fbe4488d-571e-4972-be5d-59c8e91ba3c6",
-        "color": "#7FBACA",
+        "color": "#007695",
         "position": {
           "x": 0,
           "y": 0,
